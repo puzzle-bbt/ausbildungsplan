@@ -1,0 +1,31 @@
+{
+  "title": "Applikationsentwicklung",
+  "type": "thema",
+  "required": [
+    "id",
+    "title",
+    "description"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "default": 0,
+      "minimum": 1,
+      "maximum": 3
+    },
+    "title": {
+      "type": "string",
+      "description": "Titel des Themas",
+      "title": "Thema",
+      "minLength": 3,
+      "default": "kein Titel"
+    },
+    "description": {
+      "type": "string",
+      "description": "Beschreibung des Themas",
+      "title": "Beschreibung",
+      "minLength": 3,
+      "default": "keine Beschreibung"
+    }
+  }
+}
