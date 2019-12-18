@@ -6,6 +6,7 @@ source 'https://rubygems.org'
 
 gem 'haml'
 gem 'pry'
+gem 'rake'
 gem 'rspec'
 gem 'rubocop'
 gem 'safe_yaml'
