@@ -1,0 +1,7 @@
+---
+goals:
+  - Funktionsweise einer Multi-Pape Applikation verstehen.
+  - Eine einfache Multi-Pape Applikation ohne DB anwenden und erweitern können.
+instruments:
+  - SpringBoot oder Ruby on Rails zum Erstellen einer dynamische Webseite.
+  - Existierende Beispiel Multi-Pape Applikation.

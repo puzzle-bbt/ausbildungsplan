@@ -1,0 +1,81 @@
+AllCops:
+  DisplayCopNames: true
+  Exclude:
+    - spec/spec_helper.rb
+
+Metrics/AbcSize:
+  Max: 17
+  Severity: error
+
+Metrics/ClassLength:
+  Max: 200
+  Severity: error
+
+Metrics/CyclomaticComplexity:
+  Max: 6
+  Severity: error
+
+Metrics/LineLength:
+  Max: 100
+  Severity: error
+
+Metrics/MethodLength:
+  Max: 10
+  Severity: error
+
+Metrics/ModuleLength:
+  Max: 200
+  Severity: error
+
+Metrics/ParameterLists:
+  Max: 4
+  Severity: warning
+
+Documentation:
+  Enabled: false
+
+# Missing UTF-8 encoding statements should always be created.
+Encoding:
+  Severity: error
+
+Layout/EmptyLines:
+  Enabled: false
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Layout/EmptyLinesAroundClassBody:
+  Enabled: false
+
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+IfUnlessModifier:
+  Enabled: false
+
+HasAndBelongsToMany:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/SymbolProc:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/SingleLineBlockParams:
+  Enabled: false
