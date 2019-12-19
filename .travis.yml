@@ -1,0 +1,14 @@
+language: ruby
+
+cache: bundler
+
+rvm:
+ - 2.6
+
+install:
+  - bundle install --path vendor/bundle
+  - bundle update rubocop
+
+script:
+  - bundle exec rake build
+  - bundle exec rake spec
