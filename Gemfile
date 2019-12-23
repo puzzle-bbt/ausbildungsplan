@@ -10,3 +10,4 @@ gem 'rake'
 gem 'rspec'
 gem 'rubocop'
 gem 'safe_yaml'
+gem 'simplecov', require: false, group: :test
