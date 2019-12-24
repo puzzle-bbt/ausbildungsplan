@@ -2,11 +2,12 @@
 
 require 'rake'
 require 'rspec/core/rake_task'
+require_relative 'app/controller/builder'
 
 task default: [:build]
 
 RSpec::Core::RakeTask.new(:spec)
 
 task :build do
-  ruby 'app/controller/builder.rb'
+  Builder.new
 end

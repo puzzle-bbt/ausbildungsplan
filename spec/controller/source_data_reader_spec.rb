@@ -18,15 +18,45 @@ describe SourceDataReader do
 
     topics = master['topics']
     expect(topics.length).to eq(2)
-    expect(topics[0]['compentencies'].length).to eq(6)
-    expect(topics[1]['compentencies'].length).to eq(3)
+    expect(topics[0]['competencies'].length).to eq(6)
+    expect(topics[1]['competencies'].length).to eq(3)
 
     topic = topics[1]
     expect(topic['title']).to eq('UI / Web')
 
-    compentency = topic['compentencies'][0]
+    competency = topic['competencies'][0]
 
-    expect(compentency['title']).to eq('User Experience (UX)')
-    expect(compentency['levels'].length).to eq(2)
+    expect(competency['title']).to eq('User Experience (UX)')
+    expect(competency['levels'].length).to eq(2)
+  end
+
+  it 'should create topics' do
+    topics = reader.fetch_topics
+    expect(topics.length).to eq(2)
+
+    topic = topics[0]
+    expect(topic.title).to eq('Applikationsentwicklung')
+    expect(topic.competencies.length).to eq(6)
+
+    competency = topic.competencies[0]
+    expect(competency.title).to eq('Single-Page-Applikation')
+    expect(competency.competency_levels.length).to eq(1)
+
+    level = competency.competency_levels[0]
+    expect(level.goals[0]).to eq('Funktionsweise einer Single-Page-Webanwendung verstehen')
+    expect(level.calendar_week_from).to eq(31)
+    expect(level.calendar_week_to).to eq(5)
+    expect(level.education_year).to eq(2)
+    expect(level.valid?).to be true
+  end
+
+  it 'should read the config' do
+    config = reader.fetch_config
+    expect(config.length).to eq(1)
+
+    semester = config[0]['semester'][0]
+
+    expect(semester['start_at_week_nr']).to eq(33)
+    expect(semester['finish_at_week_nr']).to eq(4)
   end
 end
