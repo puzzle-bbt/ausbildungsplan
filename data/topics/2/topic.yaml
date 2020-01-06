@@ -3,14 +3,14 @@ title: "Applikationsentwicklung"
 description: "Verstehen und Entwickeln von Server- und Clientseitiger Software."
 year_calendar_weeks:
   ## Programmierung
-  211: 1 31-40
+  2.1.1: 1 33-40
   ## Multi-Pape Applikation
-  221: 1 1-15
+  2.2.1: 1 1-15
   ## Single-Page-Applikation
-  231: 2 31-5
+  2.3.1: 2 31-5
   ## API
-  241: 1 47-50
+  2.4.1: 1 47-50
   ## Build-Tools + Dependencies
-  251: 1 40-45
+  2.5.1: 1 40-45
   ## Konzeption
-  261: 2 45-5
+  2.6.1: 2 45-5

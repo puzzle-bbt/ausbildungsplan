@@ -1,46 +1,74 @@
 # frozen_string_literal: true
 
-class CompetencyLevel
-  attr_accessor :goals, :instruments, :calendar_week_from,
-                :calendar_week_to, :education_year, :id
+require_relative 'semester'
+require_relative 'base'
 
-  def initialize(level, dates)
+class CompetencyLevel < Base
+  attr_accessor :goals, :instruments, :calendar_week_from,
+                :calendar_week_to, :education_year, :id, :level
+
+  def initialize(level)
     @id = level['id']
-    d = dates[@id].scan(/[0-9]{1,3}/)
-    @education_year = d[0].to_i
-    @calendar_week_from = d[1].to_i
-    @calendar_week_to = d[2].to_i
     @instruments = level['instruments']
     @goals = level['goals']
+    @level = level['id'].split('.')[2]
+    set_dates
+  end
+
+  def set_dates
+    topic = CompetencyLevel.data['topics'].find do |yaml_topic|
+      next if yaml_topic['year_calendar_weeks'].nil?
+
+      yaml_topic['year_calendar_weeks'].include? @id
+    end
+    dates = fetch_dates(topic['year_calendar_weeks'][@id])
+    @education_year = dates[0]
+    @calendar_week_from = dates[1]
+    @calendar_week_to = dates[2]
     notify unless valid?
   end
 
   def valid?
-    [@calendar_week_to.between?(1, 52),
-     @calendar_week_from.between?(1, 52),
-     @education_year.between?(1, 4)].all?
+    [calendar_week_to.between?(1, 52),
+     calendar_week_from.between?(1, 52),
+     education_year.between?(1, 4)].all?
+  rescue StandardError
+    false
   end
 
-  def notify
-    abort "The level with the id #{@id} is invalid"
+  def notify(id)
+    abort "The level with the id #{id} is invalid"
   end
 
-  def semester(semesters)
-    if first_semester?(semesters)
-      education_year * 2 - 1
-    elsif second_semester?(semesters)
-      education_year * 2
+  def fetch_dates(dates)
+    dates.scan(/[0-9]{1,3}/).map(&:to_i)
+  end
+
+  class << self
+    def plural
+      'competency_levels'
     end
-  end
 
-  private
+    def find_by(competency_id: nil, semester: nil)
+      if semester.nil?
+        find_by_competency(competency_id: competency_id)
+      else
+        find_by_competency_and_semester(competency_id: competency_id, semester: semester)
+      end
+    end
 
-  def first_semester?(semesters)
-    calendar_week_from.between?(semesters[0]['start_at_week_nr'], 52) ||
-        calendar_week_from.between?(semesters[0]['finish_at_week_nr'], 1)
-  end
+    private
 
-  def second_semester?(semesters)
-    calendar_week_from.between?(semesters[1]['start_at_week_nr'], semesters[1]['finish_at_week_nr'])
+    def find_by_competency(competency_id: nil)
+      all.select do |level|
+        competency_id == level.id[0..2]
+      end
+    end
+
+    def find_by_competency_and_semester(competency_id: nil, semester: nil)
+      all.select do |level|
+        competency_id == level.id[0..2] && semester.includes?(level: level)
+      end
+    end
   end
 end

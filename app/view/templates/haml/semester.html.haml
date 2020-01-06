@@ -1,0 +1,42 @@
+!!! 5
+%html
+  %head
+    %title Semester #{semester.id}
+    %link(rel="stylesheet" type="text/css" href="css/bootstrap.min.css")
+    %link(rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css")
+    %link(rel="stylesheet" type="text/css" href="css/style.css")
+  %body
+    %div(class="row")
+      %div(class="col-1")
+      %div(class="col-10")
+        %h1 Semester #{semester.id}
+        - topics.each do |topic|
+          - unless topic.competencies.empty?
+            %h2 #{topic.title}
+            %table(class="table")
+              - topic.competencies.each do |competency|
+                - unless competency.competency_levels_by_semester(semester).empty?
+                  %tr
+                    %th(colspan="4" class="table-dark") #{competency.title}
+                  %tr
+                    %th(class="col-1") Level
+                    %th(class="col-5") Ziele
+                    %th(class="col-5") Instrumente
+                    %th(class="col-1") Datum
+                    - competency.competency_levels_by_semester(semester).each do |level|
+                      %tr
+                        %td #{level.level}
+                        %td
+                          %ul
+                            - level.goals.each do |goal|
+                              %li #{goal}
+                        %td
+                          %ul
+                            - level.instruments.each do |instrument|
+                              %li #{instrument}
+                        %td
+                          von: #{level.calendar_week_from}
+                          %br/
+                          bis: #{level.calendar_week_to}
+        %p Erstellt am: #{date}
+      %div(class="col-1")
