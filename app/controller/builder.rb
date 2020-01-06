@@ -11,6 +11,7 @@ class Builder
     topics = Topic.all
     renderer = Renderer.new(topics)
     renderer.render_semesters
+    renderer.render_overview
   end
 
   private

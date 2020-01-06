@@ -36,12 +36,20 @@ class CompetencyLevel < Base
     false
   end
 
-  def notify(id)
-    abort "The level with the id #{id} is invalid"
+  def notify
+    abort "The level with the id #{@id} is invalid"
   end
 
   def fetch_dates(dates)
     dates.scan(/[0-9]{1,3}/).map(&:to_i)
+  end
+
+  def weeks
+    if @calendar_week_from < @calendar_week_to
+      [*@calendar_week_from..@calendar_week_to]
+    else
+      [*@calendar_week_from..52, *1..@calendar_week_to]
+    end
   end
 
   class << self

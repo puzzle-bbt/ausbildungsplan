@@ -1,8 +1,47 @@
 !!! 5
 %html
   %head
-    %title Hei
+    %title Overview
+    %meta{charset: "utf-8"}
+    %link(rel="stylesheet" type="text/css" href="css/bootstrap.min.css")
+    %link(rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css")
+    %link(rel="stylesheet" type="text/css" href="css/style.css")
   %body
-    %h1
-    - (1..16).each do |i|
-      %div #{i}
+    %div
+      %h1 Overview Ausbildungsjahr: #{year}
+      %table(class="table")
+        %tr
+          %th
+          - months.each do |month|
+            %th{colspan: month.day, class: 'months'}=month.strftime("%B")
+        %tr
+          %th
+          - weeks.each do |week|
+            %th{class: 'week', colspan: '7'}= week
+        - topics.each do |topic|
+          %tr
+            %th{colspan: (weeks.length * 7 + 1), class: "_#{topic.id}"} #{topic.id}: #{topic.title}
+            - topic.competencies.each do |competency|
+              %tr
+                %th #{competency.id} #{competency.title}
+                - i = 0
+                - while i <= (weeks.length - 1) do
+                  - match = false
+                  - competency.competency_levels.each do |level|
+                    -if level.calendar_week_from == weeks[i] && level.education_year == year
+                      %td{colspan: level.weeks.length * 7, class: "_#{topic.id} dropdown"}
+                        %div{class: 'level'}level: #{level.level}
+                        %div{class: 'dropdown-content'}
+                          %h3{class: 'dropdown-header'} Goals:
+                          %ul{class: 'dropdown-item'}
+                            - level.goals.each do |goal|
+                              %li=goal
+                          %h3{class: 'dropdown-header'} Instruments:
+                          %ul{class: 'dropdown-item'}
+                            - level.instruments.each do |instrument|
+                              %li=instrument
+                      - i += level.weeks.length
+                      - match = true
+                  -unless match
+                    %td{colspan: '7'}
+                    - i += 1

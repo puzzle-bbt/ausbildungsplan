@@ -1,3 +1,74 @@
 table, th, td {
   border:1px solid #dee2e6;
+  margin-bottom: 0 !important;
+}
+table {
+  width: 80%;
+}
+table th {
+  white-space: nowrap;
+  min-width: 40px;
+}
+table th:first-child {
+  width: 100%;
+}
+
+.week{
+  width: 100px;
+  overflow: hidden;
+}
+
+.title {
+  border-right: none;
+  width: 100%;
+}
+
+._1 {
+  background-color: #004225;
+  border: none;
+  color: white;
+}
+._2 {
+  background-color: #562887;
+  border: none;
+  color: white;
+}
+._3 {
+  background-color: #912123;
+  border: none;
+  color: white;
+}
+._4 {
+  background-color: blue;
+  border: none;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  color: black;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: .95rem;
+}
+
+.level {
+  margin-left: 10px;
+}
+
+td.dropdown {
+  padding-left: 0;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-item:hover {
+  background-color: white;
+}
+
+.months {
+  border-right: none;
+  border-left: none;
 }
