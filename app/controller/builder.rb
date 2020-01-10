@@ -2,13 +2,15 @@
 
 require_relative 'source_data_reader'
 require_relative '../model/competency_level'
+require_relative '../view/renderer'
 
 class Builder
 
   def initialize
     reader.create_master_yaml
-    reader.fetch_topics
-    reader.fetch_config
+    topics = Topic.all
+    renderer = Renderer.new(topics)
+    renderer.render_semesters
   end
 
   private

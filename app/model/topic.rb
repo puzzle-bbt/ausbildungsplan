@@ -1,11 +1,25 @@
 # frozen_string_literal: true
 
-class Topic
-  attr_accessor :title, :description, :competencies
+require_relative 'base'
+require_relative 'competency'
 
-  def initialize(competencies, topic)
+class Topic < Base
+  attr_accessor :title, :description, :id, :year_calendar_weeks
+
+  def initialize(topic)
+    @id = topic['id']
     @title = topic['title']
     @description = topic['description']
-    @competencies = competencies
+    @year_calendar_weeks = topic['year_calendar_weeks']
+  end
+
+  def competencies
+    @competencies ||= Competency.find_by(topic_id: @id)
+  end
+
+  class << self
+    def plural
+      'topics'
+    end
   end
 end
