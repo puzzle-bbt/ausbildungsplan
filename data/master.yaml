@@ -34,7 +34,7 @@ topics:
   description: Verwendung von Tools und Dienste.
   year_calendar_weeks:
     3.1.1: 1 33-40
-    3.2.1: 2 2-11
+    3.2.1: 1 11-20
   id: '3'
 competencies:
 - title: Multi-Pape Applikation
@@ -203,7 +203,7 @@ competency_levels:
   instruments:
   - 'Lern-Session: Virtual Machines'
   - Praktikum Systems Engineering
-  - ÜK 305 - Betriebssysteme: https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=305
+  - 'ÜK 305 - Betriebssysteme: https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=305'
   id: 3.2.1
 - goals:
   - 'Textbearbeitung: Texte, Briefe erfassen und stylen, Grafiken'
