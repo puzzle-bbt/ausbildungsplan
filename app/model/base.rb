@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
-class Base
+require 'safe_yaml'
 
+class Base
 
   def plural
     raise 'implement in subclass'

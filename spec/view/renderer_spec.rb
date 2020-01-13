@@ -10,19 +10,19 @@ describe Renderer do
   let(:renderer) { Renderer.new(Topic.all, 'spec/') }
 
   before(:all) do
-    FileUtils.mkdir('spec/public')
+    FileUtils.mkdir('spec/docs')
   end
 
   after(:all) do
-    FileUtils.rm_rf('spec/public')
+    FileUtils.rm_rf('spec/docs')
   end
 
   it 'should render semesters' do
     renderer.render_semesters
 
-    (Semester::SEMESTER_NOS).each { |i| expect(File.exist?("spec/public/semester#{i}.html")).to be true }
+    (Semester::SEMESTER_NOS).each { |i| expect(File.exist?("spec/docs/semester#{i}.html")).to be true }
 
-    semester = File.read('spec/public/semester1.html')
+    semester = File.read('spec/docs/semester1.html')
     expect(semester).to include('HTML: Aufbau einer Webseite verstehen: Tags + Attribute.')
   end
 end

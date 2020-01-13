@@ -5,7 +5,7 @@ require_relative '../../app/model/competency'
 describe Competency do
 
   before do
-    Topic.base_path = 'spec/'
+    Competency.base_path = 'spec/'
   end
 
   it 'should return all Compentencies' do

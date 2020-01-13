@@ -17,21 +17,12 @@ class Semester < Base
   end
 
   def includes?(level:)
-    if first?(level.calendar_week_from)
+    if Semester.first?(level.calendar_week_from)
       semester = level.education_year * 2 - 1
-    elsif second?(level.calendar_week_from)
+    elsif Semester.second?(level.calendar_week_from)
       semester = level.education_year * 2
     end
     semester == @id
-  end
-
-  def first?(level_start_week)
-    level_start_week.between?(@start_week, YEAR_END) ||
-        level_start_week.between?(YEAR_START, @finish_week)
-  end
-
-  def second?(level_start_week)
-    level_start_week.between?(@start_week, @finish_week)
   end
 
   class << self
@@ -41,6 +32,22 @@ class Semester < Base
         s = semester_no.odd? ? 0 : 1
         new(semester_no, config_semesters[s])
       end
+    end
+
+    def find(id:)
+      s = id.odd? ? 0 : 1
+      new(id, Semester.data['conf'][0]['semester'][s])
+    end
+
+    def first?(level_start_week)
+      semester1 = Semester.data['conf'][0]['semester'][0]
+      level_start_week.between?(semester1['start_at_week_nr'], YEAR_END) ||
+          level_start_week.between?(YEAR_START, semester1['finish_at_week_nr'])
+    end
+
+    def second?(level_start_week)
+      semester2 = Semester.data['conf'][0]['semester'][1]
+      level_start_week.between?(semester2['start_at_week_nr'], semester2['finish_at_week_nr'])
     end
   end
 end
