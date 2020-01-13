@@ -15,7 +15,7 @@ topics:
   description: Verstehen und Entwickeln von Webseiten
   year_calendar_weeks:
     1.1.1: 1 33-40
-    1.1.2: 1 50-10
+    1.1.2: 1 50-5
     1.1.3: 3 40-50
     1.1.4: 4 40-50
     1.2.1: 1 40-50
@@ -34,7 +34,8 @@ topics:
   description: Verwendung von Tools und Dienste.
   year_calendar_weeks:
     3.1.1: 1 33-40
-    3.2.1: 1 11-20
+    3.2.1: 1 6-15
+    3.3.1: 1 40-48
   id: '3'
 competencies:
 - title: Multi-Pape Applikation
@@ -77,6 +78,9 @@ competencies:
 - title: Office Tools
   description: Textbearbeitung, Tabellenkalkulation, Präsentationen
   id: '3.1'
+- title: Datenbanken
+  description: Datenbanken installieren, verwalten und Abfragen mit SQL
+  id: '3.3'
 competency_levels:
 - goals:
   - Funktionsweise einer Multi-Pape Applikation verstehen.
@@ -212,6 +216,14 @@ competency_levels:
   instruments:
   - Praktikum im Backoffice
   id: 3.1.1
+- goals:
+  - Datenbank als Dienst oder Container lokal installieren
+  - Benutzer verwalten
+  - Tabellen erstellen, Berechtigungen
+  - Einfache Queries per SQL
+  instruments:
+  - https://www.codecademy.com/learn/learn-sql
+  id: 3.3.1
 conf:
 - semester:
   - start_at_week_nr: 33
