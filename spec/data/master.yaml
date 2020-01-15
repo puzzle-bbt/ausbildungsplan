@@ -120,7 +120,8 @@ competency_levels:
 - goals:
   - Responsive Webseite verstehen und umsetzen können.
   instruments:
-  - "[](https://www.w3schools.com/html/html_responsive.asp)"
+  - "[ÜK 101 - Webauftritt: ](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=101)"
+  - "(https://www.w3schools.com/html/html_responsive.asp)"
   id: 1.1.2
 - goals:
   - CSS-Preprocessor wie Less, Sass, Scss anwenden können.
