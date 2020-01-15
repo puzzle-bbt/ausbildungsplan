@@ -2,6 +2,7 @@ AllCops:
   DisplayCopNames: true
   Exclude:
     - spec/**/*
+    - vendor/**/*
 
 Metrics/AbcSize:
   Max: 17
@@ -15,7 +16,7 @@ Metrics/CyclomaticComplexity:
   Max: 6
   Severity: error
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 100
   Severity: error
 
@@ -31,11 +32,10 @@ Metrics/ParameterLists:
   Max: 4
   Severity: warning
 
-Documentation:
+Style/Documentation:
   Enabled: false
 
-# Missing UTF-8 encoding statements should always be created.
-Encoding:
+Style/Encoding:
   Severity: error
 
 Layout/EmptyLines:
@@ -56,10 +56,7 @@ Layout/MultilineOperationIndentation:
 Lint/AmbiguousBlockAssociation:
   Enabled: false
 
-IfUnlessModifier:
-  Enabled: false
-
-HasAndBelongsToMany:
+Style/IfUnlessModifier:
   Enabled: false
 
 Style/PercentLiteralDelimiters:

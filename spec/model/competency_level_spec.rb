@@ -38,12 +38,4 @@ describe CompetencyLevel do
     expect(level.instruments).to eq(['https://jquery.com/'])
     expect(level.calendar_week_to).to eq(12)
   end
-
-  it 'should find invalid level by id 1.3.2' do
-    begin
-      CompetencyLevel.find(id: '1.3.2')
-    rescue Exception => e
-      expect(e).to eq('The level with the id 1.3.2 is invalid')
-    end
-  end
 end
