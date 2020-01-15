@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/puzzle-bbt/ausbildungsplan.svg)](https://travis-ci.com/puzzle-bbt/ausbildungsplan)
+
 # Ausbildungsplan
 
 #### Prerequisites

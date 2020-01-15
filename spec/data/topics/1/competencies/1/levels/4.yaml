@@ -2,6 +2,6 @@
 goals:
   - CSS-Preprocessor wie Less, Sass, Scss anwenden können.
 instruments:
-  - http://lesscss.org/
-  - https://sass-lang.com/guide
-  - https://sass-lang.com/documentation/syntax
+  - '[](http://lesscss.org/)'
+  - '[](https://sass-lang.com/guide)'
+  - '[](https://sass-lang.com/documentation/syntax)'

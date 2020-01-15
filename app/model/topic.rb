@@ -22,13 +22,4 @@ class Topic < Base
       'topics'
     end
   end
-
-  def semester_topic(semester, config_semesters)
-    return unless @competencies.any?
-
-    competencies = @competencies.map do |competency|
-      competency.semester_competency(semester, config_semesters)
-    end
-    Topic.new(competencies, 'title' => @title, 'description' => @description)
-  end
 end

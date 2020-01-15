@@ -52,6 +52,18 @@ class CompetencyLevel < Base
     end
   end
 
+  def link_text(instrument:)
+    text = instrument[/\[(.*)\]/, 1]
+    link = instrument[/\((.*)\)/, 1]
+    if link.empty? || link.nil?
+      text
+    elsif text.nil? || text.empty?
+      "<a href= \"#{link}\">#{link}</a>"
+    else
+      "<a href= \"#{link}\">#{text}</a>"
+    end
+  end
+
   class << self
     def plural
       'competency_levels'
