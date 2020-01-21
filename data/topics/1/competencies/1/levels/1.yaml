@@ -7,6 +7,6 @@ goals:
   - Trennung zwischen HTML und CSS verstehen.
   - Einfache Layouts mit HTML + CSS umsetzen können.
 instruments:
-  - https://www.w3schools.com/html
-  - https://www.w3schools.com/css
-  - https://www.codecademy.com/catalog/language/html-css
+  - '[https://www.w3schools.com/html](https://www.w3schools.com/html)'
+  - '[https://www.w3schools.com/css](https://www.w3schools.com/css)'
+  - '[https://www.codecademy.com/catalog/language/html-css](https://www.codecademy.com/catalog/language/html-css)'

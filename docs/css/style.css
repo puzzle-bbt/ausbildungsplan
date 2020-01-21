@@ -72,3 +72,20 @@ td.dropdown {
   border-right: none;
   border-left: none;
 }
+
+.nav-text {
+  color: white;
+  padding: 10px;
+}
+
+.nav-content {
+  margin-top: 0;
+}
+
+.nav-item:hover {
+  background-color: gray;
+}
+
+.navbar {
+  margin-bottom: 10px;
+}

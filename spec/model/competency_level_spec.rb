@@ -35,7 +35,7 @@ describe CompetencyLevel do
   it 'should find level by id 1.2.2' do
     level = CompetencyLevel.find(id: '1.2.2')
 
-    expect(level.instruments).to eq(['https://jquery.com/'])
+    expect(level.instruments).to eq(['[https://jquery.com/](https://jquery.com/)'])
     expect(level.calendar_week_to).to eq(12)
   end
 end

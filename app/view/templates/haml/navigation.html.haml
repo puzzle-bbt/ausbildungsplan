@@ -1,0 +1,22 @@
+!!! 5
+%html
+  %head
+    %title Ausbildungsplan
+    %meta{charset: "utf-8"}
+    %link(rel="stylesheet" type="text/css" href="css/bootstrap.min.css")
+    %link(rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css")
+    %link(rel="stylesheet" type="text/css" href="css/style.css")
+  %body
+    %nav(class="navbar navbar-expand-sm bg-dark navbar-dark")
+      %a(class="navbar-brand" href="index.html")Home
+      %ul(class="navbar-nav")
+        %li(class="nav-item dropdown")
+          %div(class= "nav-text") Semester
+          %div(class="dropdown-content nav-content")
+            - (1..8).each do |i|
+              %a(class="dropdown-item nav-item" href="semester#{i}.html")Semester #{i}
+        %li(class="nav-item dropdown")
+          %div(class= "nav-text") Jahre
+          %div(class="dropdown-content nav-content")
+            - (1..4).each do |i|
+              %a(class="dropdown-item nav-item" href="overview#{i}.html")Jahr #{i}

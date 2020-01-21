@@ -2,6 +2,7 @@
 
 require_relative 'semester'
 require_relative 'base'
+require 'redcarpet'
 
 class CompetencyLevel < Base
   attr_accessor :goals, :instruments, :calendar_week_from,
@@ -50,6 +51,10 @@ class CompetencyLevel < Base
     else
       [*@calendar_week_from..52, *1..@calendar_week_to]
     end
+  end
+
+  def link_text(instrument:)
+    Redcarpet::Markdown.new(Redcarpet::Render::HTML.new).render(instrument)
   end
 
   class << self

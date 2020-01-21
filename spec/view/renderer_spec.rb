@@ -16,7 +16,7 @@ describe Renderer do
   after(:all) do
     FileUtils.rm_rf('spec/docs')
   end
-
+  
   it 'should render semesters' do
     renderer.render_semesters
 
@@ -24,6 +24,8 @@ describe Renderer do
 
     semester = File.read('spec/docs/semester1.html')
     expect(semester).to include('HTML: Aufbau einer Webseite verstehen: Tags + Attribute.')
+    expect(semester).to include('Semester')
+    expect(semester).to include('Jahre')
   end
 
   it 'should render the overview' do
@@ -36,5 +38,21 @@ describe Renderer do
     expect(overview).to include('UI / Web')
     expect(overview).to include('Applikationsentwicklung')
     expect(overview).to include('Responsive Webseite verstehen und umsetzen können.')
+    expect(overview).to include('Semester')
+    expect(overview).to include('Jahre')
   end
+
+  it 'should render index' do
+    renderer.render_index
+
+    expect(File.exist?('spec/docs/index.html')).to be true
+
+    index = File.read('spec/docs/index.html')
+
+    expect(index).to include('Applikationsentwickler EFZ - Web Engineering')
+    expect(index).to include('Semester')
+    expect(index).to include('Jahre')
+  end
+
+
 end

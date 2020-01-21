@@ -12,6 +12,7 @@ class Builder
     renderer = Renderer.new(topics)
     renderer.render_semesters
     renderer.render_overview
+    renderer.render_index
   end
 
   private
