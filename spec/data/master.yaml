@@ -24,15 +24,12 @@ topics:
     1.3.2: 4 8-22
   id: '1'
 competencies:
-- title: Multi-Pape Applikation
-  description: Verstehen und Umsetzen einer Multi-Pape Applikation
-  id: '2.2'
 - title: Single-Page-Applikation
   description: Verstehen und Umsetzen einer Single-Page-Applikation
   id: '2.3'
-- title: Programmierung
-  description: Aufbau und Gestaltung einer statischen Webseite
-  id: '2.1'
+- title: Multi-Pape Applikation
+  description: Verstehen und Umsetzen einer Multi-Pape Applikation
+  id: '2.2'
 - title: API
   description: Definieren und Verwenden von Schnittstellen
   id: '2.4'
@@ -42,16 +39,24 @@ competencies:
 - title: Build-Tools + Dependencies
   description: Verwalten der Abhängigkeiten, bauen und deployen von einer Webapplikation
   id: '2.5'
-- title: JavaScript in Webseiten
-  description: Einsatz von JavaScript in einer statischen Webseite.
-  id: '1.2'
+- title: Programmierung
+  description: Aufbau und Gestaltung einer statischen Webseite
+  id: '2.1'
 - title: User Experience (UX)
   description: Design, Interaktion und Gebrauchstauglichkeit einer Webseite verbessern.
   id: '1.3'
+- title: JavaScript in Webseiten
+  description: Einsatz von JavaScript in einer statischen Webseite.
+  id: '1.2'
 - title: Statische Webseite
   description: Aufbau und Gestaltung einer statischen Webseite
   id: '1.1'
 competency_levels:
+- goals:
+  - Funktionsweise einer Single-Page-Webanwendung verstehen
+  instruments:
+  - Hilfsmittel sind noch zu definieren.
+  id: 2.3.1
 - goals:
   - Funktionsweise einer Multi-Pape Applikation verstehen.
   - Eine einfache Multi-Pape Applikation ohne DB anwenden und erweitern können.
@@ -60,36 +65,43 @@ competency_levels:
   - "[Existierende Beispiel Multi-Pape Applikation.]()"
   id: 2.2.1
 - goals:
-  - Funktionsweise einer Single-Page-Webanwendung verstehen
-  instruments:
-  - "[Hilfsmittel sind noch zu definieren.]()"
-  id: 2.3.1
-- goals:
-  - Einstieg in die Programmierung mit JavaScript.
-  - Kennenlernen von Variablen, Typen, Verzweigungen und Schleifen
-  instruments:
-  - "[Hilfsmittel sind noch zu definieren.]()"
-  id: 2.1.1
-- goals:
   - Die Ziele dieses Levels sind noch nicht definiert.
   instruments:
-  - "[Hilfsmittel sind noch zu definieren.]()"
+  - Hilfsmittel sind noch zu definieren.
   id: 2.4.1
 - goals:
   - Die Ziele dieses Levels sind noch nicht definiert.
   instruments:
-  - "[Hilfsmittel sind noch zu definieren.]()"
+  - Hilfsmittel sind noch zu definieren.
   id: 2.6.1
 - goals:
   - Die Ziele dieses Levels sind noch nicht definiert.
   instruments:
-  - "[Hilfsmittel sind noch zu definieren.]()"
+  - Hilfsmittel sind noch zu definieren.
   id: 2.5.1
+- goals:
+  - Einstieg in die Programmierung mit JavaScript.
+  - Kennenlernen von Variablen, Typen, Verzweigungen und Schleifen
+  instruments:
+  - Hilfsmittel sind noch zu definieren.
+  id: 2.1.1
+- goals:
+  - Responsive First Ansatz
+  instruments:
+  - "[https://getbootstrap.com/](https://getbootstrap.com/)"
+  id: 1.3.2
+- goals:
+  - Was bedeutet User Experience (UX)?
+  - Design und Layout einer Webseite.
+  - Formulare
+  instruments:
+  - Hilfsmittel sind noch zu definieren.
+  id: 1.3.1
 - goals:
   - Mit jQuery HTML-Tags in den DOM hinzufügen und bestehende HTML-Tags manipulieren.
   - Daten mit einem Ajax-Request nachladen.
   instruments:
-  - "[](https://jquery.com/)"
+  - "[https://jquery.com/](https://jquery.com/)"
   id: 1.2.2
 - goals:
   - JavaScript direkt in der HTML-Seite.
@@ -98,37 +110,22 @@ competency_levels:
   - Ein Formular validieren und absenden.
   - 'Entwickler-Tools: Debuggen im Browser.'
   instruments:
-  - "[Hilfsmittel sind noch zu definieren.]()"
+  - Hilfsmittel sind noch zu definieren.
   id: 1.2.1
-- goals:
-  - Responsive First Ansatz
-  instruments:
-  - "[](https://getbootstrap.com/)"
-  id: 1.3.2
-- goals:
-  - Was bedeutet User Experience (UX)?
-  - Design und Layout einer Webseite.
-  - Formulare
-  instruments:
-  - "[Hilfsmittel sind noch zu definieren.]()"
-  id: 1.3.1
-- goals:
-  - Verwendung von HTML-Framework wie Bootstrap anwenden können.
-  instruments:
-  - "[](https://getbootstrap.com/)"
-  id: 1.1.3
 - goals:
   - Responsive Webseite verstehen und umsetzen können.
   instruments:
   - "[ÜK 101 - Webauftritt: ](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=101)"
-  - "(https://www.w3schools.com/html/html_responsive.asp)"
+  - Text zum testen (https://www.w3schools.com/html/html_responsive.asp) Text zum
+    testen (https://www.w3schools.com/html/html_responsive.asp) Noch mehr Text
+  - Lorem ipsum dolor sit amet.
   id: 1.1.2
 - goals:
   - CSS-Preprocessor wie Less, Sass, Scss anwenden können.
   instruments:
-  - "[](http://lesscss.org/)"
-  - "[](https://sass-lang.com/guide)"
-  - "[](https://sass-lang.com/documentation/syntax)"
+  - "[http://lesscss.org/](http://lesscss.org/)"
+  - "[https://sass-lang.com/guide](https://sass-lang.com/guide)"
+  - "[https://sass-lang.com/documentation/syntax](https://sass-lang.com/documentation/syntax)"
   id: 1.1.4
 - goals:
   - 'HTML: Aufbau einer Webseite verstehen: Tags + Attribute.'
@@ -138,10 +135,15 @@ competency_levels:
   - Trennung zwischen HTML und CSS verstehen.
   - Einfache Layouts mit HTML + CSS umsetzen können.
   instruments:
-  - "[](https://www.w3schools.com/html)"
-  - "[](https://www.w3schools.com/css)"
-  - "[](https://www.codecademy.com/catalog/language/html-css)"
+  - "[https://www.w3schools.com/html](https://www.w3schools.com/html)"
+  - "[https://www.w3schools.com/css](https://www.w3schools.com/css)"
+  - "[https://www.codecademy.com/catalog/language/html-css](https://www.codecademy.com/catalog/language/html-css)"
   id: 1.1.1
+- goals:
+  - Verwendung von HTML-Framework wie Bootstrap anwenden können.
+  instruments:
+  - "[https://getbootstrap.com/](https://getbootstrap.com/)"
+  id: 1.1.3
 conf:
 - semester:
   - start_at_week_nr: 33

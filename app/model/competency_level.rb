@@ -2,6 +2,7 @@
 
 require_relative 'semester'
 require_relative 'base'
+require 'redcarpet'
 
 class CompetencyLevel < Base
   attr_accessor :goals, :instruments, :calendar_week_from,
@@ -53,15 +54,7 @@ class CompetencyLevel < Base
   end
 
   def link_text(instrument:)
-    text = instrument[/\[(.*)\]/, 1]
-    link = instrument[/\((.*)\)/, 1]
-    if link.empty? || link.nil?
-      text
-    elsif text.nil? || text.empty?
-      "<a href= \"#{link}\">#{link}</a>"
-    else
-      "<a href= \"#{link}\">#{text}</a>"
-    end
+    Redcarpet::Markdown.new(Redcarpet::Render::HTML.new).render(instrument)
   end
 
   class << self
