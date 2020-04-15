@@ -1,5 +1,9 @@
 ---
 goals:
-  - Die Ziele dieses Levels sind noch nicht definiert.
+  - Versteht die Kernkonzepte von DevOps
+  - Versteht die Funktionsweise von Jenkins Pipelines
+  - Kann eigenes Projekt in Multibranch Pipeline bauen
 instruments:
-  - Hilfsmittel sind noch zu definieren.
+  - (Jenkins)[https://jenkins.io/doc/tutorials/]
+  - (Jenkins Katacode)[https://www.katacoda.com/courses/cicd/jenkins]
+  - (DevOps)[https://www.guru99.com/devops-tutorial.html]

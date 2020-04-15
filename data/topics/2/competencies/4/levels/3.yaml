@@ -1,0 +1,8 @@
+---
+goals:
+  - Event Driven Architecture verstehen
+  - Messaging Konzept verstehen
+  
+instruments:
+  - (Smallrye Messaging Concecpts)[https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/2/index.html]
+

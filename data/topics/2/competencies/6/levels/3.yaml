@@ -1,5 +1,7 @@
 ---
 goals:
-  - Die Ziele dieses Levels sind noch nicht definiert.
+  - Kann Prozesse in bekannten Architekturen modellieren
+  - Kennt und versteht Transaktionalität 
+  - Kann Fehler und Fehlerhandling modellieren und abbilden
 instruments:
   - Hilfsmittel sind noch zu definieren.

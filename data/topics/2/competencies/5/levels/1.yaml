@@ -1,5 +1,7 @@
 ---
 goals:
-  - Die Ziele dieses Levels sind noch nicht definiert.
+  - Versteht denn Sinn und Zweck von BuildTools
+  - Kennt die gängigsten Dependencymanager und Buildtools
 instruments:
-  - Hilfsmittel sind noch zu definieren.
+  - (Maven)[https://maven.apache.org/]
+  - (Gradle)[https://gradle.org/]

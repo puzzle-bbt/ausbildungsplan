@@ -1,0 +1,9 @@
+---
+goals:
+  - Microservice Architektur verstehen
+  - Backend Kommunkationsarten verstehen (HTTP / gRPC / Event Driven)
+  - Deployment und Containerisierung von Applikationen
+  
+instruments:
+  - (Deployment auf Openshift)[https://learn.openshift.com]
+  - (Microservices)[https://microservices.io/]

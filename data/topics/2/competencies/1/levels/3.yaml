@@ -1,0 +1,8 @@
+---
+goals:
+  - Versteht wie man Programmabläufe parallelisiert
+  - Versteht Konzepte und Probleme von Concurrency
+  - Kann basische Algorithmen durch Parallelisierung verbessern
+instruments:
+  - (Bekannte Algorithmen)[https://medium.com/@codingfreak/top-algorithms-data-structures-concepts-every-computer-science-student-should-know-e0549c67b4ac]
+  - (Oracle Concurrency)[https://docs.oracle.com/javase/tutorial/essential/concurrency/]
