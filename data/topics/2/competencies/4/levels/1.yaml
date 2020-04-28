@@ -6,5 +6,5 @@ goals:
   - CRUD Operationen als Endpunkte anbieten und abbilden
   
 instruments:
-  - (API Guidelines)[https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9]
-  - (RESTful Guidelines)[https://restfulapi.net/]
+  - '(API Guidelines)[https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9]'
+  - '(RESTful Guidelines)[https://restfulapi.net/]'

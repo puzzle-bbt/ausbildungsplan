@@ -1,7 +1,6 @@
 ---
 goals:
-  - Kann Prozesse in bekannten Architekturen modellieren
-  - Kennt und versteht Transaktionalität 
-  - Kann Fehler und Fehlerhandling modellieren und abbilden
+  - Applikationen als Microservices modellieren
+  - Konzeption und Modellierung der Kommunikation
 instruments:
   - Hilfsmittel sind noch zu definieren.

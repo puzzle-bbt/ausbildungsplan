@@ -4,4 +4,5 @@ goals:
   - Eine einfache Multi-Pape Applikation ohne DB anwenden und erweitern können.
 instruments:
   - SpringBoot oder Ruby on Rails zum Erstellen einer dynamische Webseite.
-  - Existierende Beispiel Multi-Pape Applikation.
+  - '(Spring Boot Baeldung)[https://www.baeldung.com/spring-boot]'
+  - '(Ruby on Rails)[https://rubyonrails.org/]'

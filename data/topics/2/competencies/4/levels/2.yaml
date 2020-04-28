@@ -5,5 +5,5 @@ goals:
   - Deployment und Containerisierung von Applikationen
   
 instruments:
-  - (Deployment auf Openshift)[https://learn.openshift.com]
-  - (Microservices)[https://microservices.io/]
+  - '(Deployment auf Openshift)[https://learn.openshift.com]'
+  - '(Microservices)[https://microservices.io/]'

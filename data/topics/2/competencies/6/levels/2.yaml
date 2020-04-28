@@ -1,6 +1,7 @@
 ---
 goals:
-  - Applikationen als Microservices modellieren
-  - Konzeption und Modellierung der Kommunikation
+  - Kennt Domain Driven Design
+  - Kennt die Clean Architecture Ansätze
+  - Kann Applikationen nach ihren Grundsätzen modellieren
 instruments:
-  - Hilfsmittel sind noch zu definieren.
+  - '(Blog DDD / CA)[https://khalilstemmler.com/articles/software-design-architecture/domain-driven-design-vs-clean-architecture/]'

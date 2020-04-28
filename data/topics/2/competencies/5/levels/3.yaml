@@ -1,9 +1,10 @@
 ---
 goals:
-  - Versteht die Kernkonzepte von DevOps
-  - Versteht die Funktionsweise von Jenkins Pipelines
-  - Kann eigenes Projekt in Multibranch Pipeline bauen
+  - Versteht wie Container funktionieren und den Unterschied zu virtuellen Maschinen
+  - Versteht den Nutzen einer Orchestrierungsplattform
+  - Kann eigene Testprojekte auf Kubernetes / Openshift deployen
 instruments:
-  - (Jenkins)[https://jenkins.io/doc/tutorials/]
-  - (Jenkins Katacode)[https://www.katacoda.com/courses/cicd/jenkins]
-  - (DevOps)[https://www.guru99.com/devops-tutorial.html]
+  - '(Container vs VM)[https://www.docker.com/resources/what-container]'
+  - '(Openshift Documentation)[https://docs.openshift.com/]'
+  - '(Kubernetes Documentation)[https://kubernetes.io/docs/home/]'
+  
