@@ -1,6 +1,25 @@
 # This is an automaticly generated file. Don't edit this file manually
 ---
 topics:
+- title: UI / Web
+  description: Verstehen und Entwickeln von Webseiten
+  year_calendar_weeks:
+    1.1.1: 1 33-40
+    1.1.2: 1 50-5
+    1.1.3: 3 40-50
+    1.1.4: 4 40-50
+    1.2.1: 1 40-50
+    1.2.2: 2 40-50
+    1.3.1: 1 50-5
+    1.3.2: 2 33-39
+  id: '1'
+- title: Tools / Dienste
+  description: Verwendung von Tools und Dienste.
+  year_calendar_weeks:
+    3.1.1: 1 33-40
+    3.2.1: 1 6-15
+    3.3.1: 1 40-48
+  id: '3'
 - title: Applikationsentwicklung
   description: Verstehen und Entwickeln von Server- und Clientseitiger Software.
   year_calendar_weeks:
@@ -21,15 +40,8 @@ topics:
     2.6.1: 1 45-5
     2.6.2: 2 5-6
     2.6.3: 3 6-7
-    2.6.4.: 4 8-9
+    2.6.4: 4 8-9
   id: '2'
-- title: Tools / Dienste
-  description: Verwendung von Tools und Dienste.
-  year_calendar_weeks:
-    3.1.1: 1 33-40
-    3.2.1: 1 6-15
-    3.3.1: 1 40-48
-  id: '3'
 - title: Team- / Selbstorganisation
   description: Organisation rund um die komplexe Welt der Applikationsentwicklung.
   year_calendar_weeks:
@@ -37,71 +49,182 @@ topics:
     4.1.2: 2 33-40
     4.2.1: 1 33-40
   id: '4'
-- title: UI / Web
-  description: Verstehen und Entwickeln von Webseiten
-  year_calendar_weeks:
-    1.1.1: 1 33-40
-    1.1.2: 1 50-5
-    1.1.3: 3 40-50
-    1.1.4: 4 40-50
-    1.2.1: 1 40-50
-    1.2.2: 2 40-50
-    1.3.1: 1 50-5
-    1.3.2: 2 33-39
-  id: '1'
 competencies:
-- title: Multi-Pape Applikation
-  description: Verstehen und Umsetzen einer Multi-Page Applikation
-  id: '2.2'
-- title: Single-Page-Applikation
-  description: Verstehen und Umsetzen einer Single-Page-Applikation
-  id: '2.3'
-- title: API
-  description: Definieren und Verwenden von Schnittstellen
-  id: '2.4'
-- title: Programmierung
+- title: Statische Webseite
   description: Aufbau und Gestaltung einer statischen Webseite
-  id: '2.1'
-- title: Konzeption
-  description: Erstellen und dokumentieren einer Software Architektur.
-  id: '2.6'
-- title: Build-Tools + Dependencies
-  description: Verwalten der Abhängigkeiten, bauen und deployen von einer Webapplikation
-  id: '2.5'
-- title: Betriebssysteme
-  description: Betriebssystem Anwendung, Installation und Konfiguration
-  id: '3.2'
-- title: Datenbanken
-  description: Datenbanken installieren, verwalten und Abfragen mit SQL
-  id: '3.3'
+  id: '1.1'
+- title: User Experience (UX)
+  description: Design, Interaktion und Gebrauchstauglichkeit einer Webseite verbessern.
+  id: '1.3'
+- title: JavaScript in Webseiten
+  description: Einsatz von JavaScript in einer statischen Webseite.
+  id: '1.2'
 - title: Office Tools
   description: Textbearbeitung, Tabellenkalkulation, Präsentationen
   id: '3.1'
-- title: Selbstorganisation/Selbstkompetenz
-  description: Persönliche Organisation, Kommunikation, Lernstrategien
-  id: '4.2'
+- title: Datenbanken
+  description: Datenbanken installieren, verwalten und Abfragen mit SQL
+  id: '3.3'
+- title: Betriebssysteme
+  description: Betriebssystem Anwendung, Installation und Konfiguration
+  id: '3.2'
+- title: Programmierung
+  description: Aufbau und Gestaltung einer statischen Webseite
+  id: '2.1'
+- title: Build-Tools + Dependencies
+  description: Verwalten der Abhängigkeiten, bauen und deployen von einer Webapplikation
+  id: '2.5'
+- title: Single-Page-Applikation
+  description: Verstehen und Umsetzen einer Single-Page-Applikation
+  id: '2.3'
+- title: Multi-Pape Applikation
+  description: Verstehen und Umsetzen einer Multi-Page Applikation
+  id: '2.2'
+- title: API
+  description: Definieren und Verwenden von Schnittstellen
+  id: '2.4'
+- title: Konzeption
+  description: Erstellen und dokumentieren einer Software Architektur.
+  id: '2.6'
 - title: Team- / Projektorganisation
   description: Methoden, Werkzeuge und Wissen rund um die Organisation im Team und
     in Projekten.
   id: '4.1'
-- title: JavaScript in Webseiten
-  description: Einsatz von JavaScript in einer statischen Webseite.
-  id: '1.2'
-- title: User Experience (UX)
-  description: Design, Interaktion und Gebrauchstauglichkeit einer Webseite verbessern.
-  id: '1.3'
-- title: Statische Webseite
-  description: Aufbau und Gestaltung einer statischen Webseite
-  id: '1.1'
+- title: Selbstorganisation/Selbstkompetenz
+  description: Persönliche Organisation, Kommunikation, Lernstrategien
+  id: '4.2'
 competency_levels:
 - goals:
-  - Funktionsweise einer Multi-Pape Applikation verstehen.
-  - Eine einfache Multi-Pape Applikation ohne DB anwenden und erweitern können.
+  - Responsive Webseite verstehen und umsetzen können.
   instruments:
-  - SpringBoot oder Ruby on Rails zum Erstellen einer dynamische Webseite.
-  - "(Spring Boot Baeldung)[https://www.baeldung.com/spring-boot]"
-  - "(Ruby on Rails)[https://rubyonrails.org/]"
-  id: 2.2.1
+  - "[ÜK 101 - Webauftritt: ](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=101)"
+  - "[https://www.w3schools.com/html/html_responsive.asp](https://www.w3schools.com/html/html_responsive.asp)"
+  id: 1.1.2
+- goals:
+  - Verwendung von HTML-Framework wie Bootstrap anwenden können.
+  instruments:
+  - "[https://getbootstrap.com/](https://getbootstrap.com/)"
+  id: 1.1.3
+- goals:
+  - CSS-Preprocessor wie Less, Sass, Scss anwenden können.
+  instruments:
+  - "[http://lesscss.org/](http://lesscss.org/)"
+  - "[https://sass-lang.com/guide](https://sass-lang.com/guide)"
+  - "[https://sass-lang.com/documentation/syntax](https://sass-lang.com/documentation/syntax)"
+  id: 1.1.4
+- goals:
+  - 'HTML: Aufbau einer Webseite verstehen: Tags + Attribute.'
+  - 'HTML: Die wichtigsten HTML-Tags kennen.'
+  - 'CSS: Funktionsweise von Selektoren und Formatierung verstehen.'
+  - 'CSS: Die einfachen Styles anwenden können.'
+  - Trennung zwischen HTML und CSS verstehen.
+  - Einfache Layouts mit HTML + CSS umsetzen können.
+  instruments:
+  - "[https://www.w3schools.com/html](https://www.w3schools.com/html)"
+  - "[https://www.w3schools.com/css](https://www.w3schools.com/css)"
+  - "[https://www.codecademy.com/catalog/language/html-css](https://www.codecademy.com/catalog/language/html-css)"
+  id: 1.1.1
+- goals:
+  - Responsive First Ansatz
+  instruments:
+  - "[https://getbootstrap.com/](https://getbootstrap.com/)"
+  id: 1.3.2
+- goals:
+  - Was bedeutet User Experience (UX)?
+  - Design und Layout einer Webseite.
+  - Formulare
+  instruments:
+  - Hilfsmittel sind noch zu definieren.
+  id: 1.3.1
+- goals:
+  - Mit jQuery HTML-Tags in den DOM hinzufügen und bestehende HTML-Tags manipulieren.
+  - Daten mit einem Ajax-Request nachladen.
+  instruments:
+  - "[https://jquery.com/](https://jquery.com/)"
+  id: 1.2.2
+- goals:
+  - JavaScript direkt in der HTML-Seite.
+  - JavaScript in eine separate Datei auslagern.
+  - Mit JavaScript einfache click-Handler umsetzen.
+  - Ein Formular validieren und absenden.
+  - 'Entwickler-Tools: Debuggen im Browser.'
+  instruments:
+  - Hilfsmittel sind noch zu definieren.
+  id: 1.2.1
+- goals:
+  - 'Textbearbeitung: Texte, Briefe erfassen und stylen, Grafiken'
+  - 'Tabellenkalkulation: Spalten, Zeilen, Operationen, Listen'
+  - 'Präsentationen: Texte, Grafiken, Styles, Inhaltsverzeichnis'
+  instruments:
+  - Praktikum im Backoffice
+  id: 3.1.1
+- goals:
+  - Datenbank als Dienst oder Container lokal installieren
+  - Benutzer verwalten
+  - Tabellen erstellen, Berechtigungen
+  - Einfache Queries per SQL
+  instruments:
+  - "[https://www.codecademy.com/learn/learn-sql](https://www.codecademy.com/learn/learn-sql)"
+  id: 3.3.1
+- goals:
+  - Kennen der wichtigsten Hardwarekomponenten eines PCs und dessen Aufgaben
+  - Selbständig ein Betriebssystem auf einem Computer und in einer Virtual Machine
+    installieren
+  - Virtual Machines managen
+  - Software/Pakete installieren, entfernen, konfigurieren
+  - Benutzerverwaltung und Berechtigungen kennen und anwenden
+  instruments:
+  - 'Lern-Session: Virtual Machines'
+  - Praktikum Systems Engineering
+  - "[ÜK 305 - Betriebssysteme: ](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=305)"
+  id: 3.2.1
+- goals:
+  - Kennenlernen der gängigsten Algorithmen
+  - Entwerfen eigener Algorithmen
+  - Lesen und Verstehen von fremdem Code
+  instruments:
+  - "(Bekannte Algorithmen)[https://medium.com/@codingfreak/top-algorithms-data-structures-concepts-every-computer-science-student-should-know-e0549c67b4ac]"
+  id: 2.1.2
+- goals:
+  - Versteht wie man Programmabläufe parallelisiert
+  - Versteht Konzepte und Probleme von Concurrency
+  - Kann basische Algorithmen durch Parallelisierung verbessern
+  - Kennt Probleme der Concurrency und mögliche Lösungen
+  instruments:
+  - "(Bekannte Algorithmen)[https://medium.com/@codingfreak/top-algorithms-data-structures-concepts-every-computer-science-student-should-know-e0549c67b4ac]"
+  - "(Oracle Concurrency)[https://docs.oracle.com/javase/tutorial/essential/concurrency/]"
+  id: 2.1.3
+- goals:
+  - Einstieg in die Programmierung
+  - Kennenlernen von Variablen, Typen, Verzweigungen und Schleifen
+  instruments:
+  - Hilfsmittel sind noch zu definieren.
+  id: 2.1.1
+- goals:
+  - Versteht die Kernkonzepte von DevOps
+  - Versteht die Funktionsweise von Build Pipelines
+  - Kann eigenes Projekt in Multibranch Pipeline bauen
+  instruments:
+  - "(Jenkins)[https://jenkins.io/doc/tutorials/]"
+  - "(Jenkins Katacode)[https://www.katacoda.com/courses/cicd/jenkins]"
+  - "(DevOps)[https://www.guru99.com/devops-tutorial.html]"
+  id: 2.5.2
+- goals:
+  - Versteht wie Container funktionieren und den Unterschied zu virtuellen Maschinen
+  - Versteht den Nutzen einer Orchestrierungsplattform
+  - Kann eigene Testprojekte auf Kubernetes / Openshift deployen
+  instruments:
+  - "(Container vs VM)[https://www.docker.com/resources/what-container]"
+  - "(Openshift Documentation)[https://docs.openshift.com/]"
+  - "(Kubernetes Documentation)[https://kubernetes.io/docs/home/]"
+  id: 2.5.3
+- goals:
+  - Versteht denn Sinn und Zweck von BuildTools
+  - Kennt die gängigsten Dependencymanager und Buildtools
+  instruments:
+  - "(Maven)[https://maven.apache.org/]"
+  - "(Gradle)[https://gradle.org/]"
+  id: 2.5.1
 - goals:
   - Kann Single Page Applications erstellen
   - Kann CRUD Operationen visualisieren
@@ -136,6 +259,14 @@ competency_levels:
   - Hilfsmittel sind noch zu definieren.
   id: 2.3.1
 - goals:
+  - Funktionsweise einer Multi-Pape Applikation verstehen.
+  - Eine einfache Multi-Pape Applikation ohne DB anwenden und erweitern können.
+  instruments:
+  - SpringBoot oder Ruby on Rails zum Erstellen einer dynamische Webseite.
+  - "(Spring Boot Baeldung)[https://www.baeldung.com/spring-boot]"
+  - "(Ruby on Rails)[https://rubyonrails.org/]"
+  id: 2.2.1
+- goals:
   - Microservice Architektur verstehen
   - Backend Kommunkationsarten verstehen (HTTP / gRPC / Event Driven)
   - Deployment und Containerisierung von Applikationen
@@ -158,28 +289,6 @@ competency_levels:
   - "(API Guidelines)[https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9]"
   - "(RESTful Guidelines)[https://restfulapi.net/]"
   id: 2.4.1
-- goals:
-  - Kennenlernen der gängigsten Algorithmen
-  - Entwerfen eigener Algorithmen
-  - Lesen und Verstehen von fremdem Code
-  instruments:
-  - "(Bekannte Algorithmen)[https://medium.com/@codingfreak/top-algorithms-data-structures-concepts-every-computer-science-student-should-know-e0549c67b4ac]"
-  id: 2.1.2
-- goals:
-  - Versteht wie man Programmabläufe parallelisiert
-  - Versteht Konzepte und Probleme von Concurrency
-  - Kann basische Algorithmen durch Parallelisierung verbessern
-  - Kennt Probleme der Concurrency und mögliche Lösungen
-  instruments:
-  - "(Bekannte Algorithmen)[https://medium.com/@codingfreak/top-algorithms-data-structures-concepts-every-computer-science-student-should-know-e0549c67b4ac]"
-  - "(Oracle Concurrency)[https://docs.oracle.com/javase/tutorial/essential/concurrency/]"
-  id: 2.1.3
-- goals:
-  - Einstieg in die Programmierung
-  - Kennenlernen von Variablen, Typen, Verzweigungen und Schleifen
-  instruments:
-  - Hilfsmittel sind noch zu definieren.
-  id: 2.1.1
 - goals:
   - Kennt Domain Driven Design
   - Kennt die Clean Architecture Ansätze
@@ -207,66 +316,6 @@ competency_levels:
   - Hilfsmittel sind noch zu definieren.
   id: 2.6.1
 - goals:
-  - Versteht die Kernkonzepte von DevOps
-  - Versteht die Funktionsweise von Build Pipelines
-  - Kann eigenes Projekt in Multibranch Pipeline bauen
-  instruments:
-  - "(Jenkins)[https://jenkins.io/doc/tutorials/]"
-  - "(Jenkins Katacode)[https://www.katacoda.com/courses/cicd/jenkins]"
-  - "(DevOps)[https://www.guru99.com/devops-tutorial.html]"
-  id: 2.5.2
-- goals:
-  - Versteht wie Container funktionieren und den Unterschied zu virtuellen Maschinen
-  - Versteht den Nutzen einer Orchestrierungsplattform
-  - Kann eigene Testprojekte auf Kubernetes / Openshift deployen
-  instruments:
-  - "(Container vs VM)[https://www.docker.com/resources/what-container]"
-  - "(Openshift Documentation)[https://docs.openshift.com/]"
-  - "(Kubernetes Documentation)[https://kubernetes.io/docs/home/]"
-  id: 2.5.3
-- goals:
-  - Versteht denn Sinn und Zweck von BuildTools
-  - Kennt die gängigsten Dependencymanager und Buildtools
-  instruments:
-  - "(Maven)[https://maven.apache.org/]"
-  - "(Gradle)[https://gradle.org/]"
-  id: 2.5.1
-- goals:
-  - Kennen der wichtigsten Hardwarekomponenten eines PCs und dessen Aufgaben
-  - Selbständig ein Betriebssystem auf einem Computer und in einer Virtual Machine
-    installieren
-  - Virtual Machines managen
-  - Software/Pakete installieren, entfernen, konfigurieren
-  - Benutzerverwaltung und Berechtigungen kennen und anwenden
-  instruments:
-  - 'Lern-Session: Virtual Machines'
-  - Praktikum Systems Engineering
-  - "[ÜK 305 - Betriebssysteme: ](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=305)"
-  id: 3.2.1
-- goals:
-  - Datenbank als Dienst oder Container lokal installieren
-  - Benutzer verwalten
-  - Tabellen erstellen, Berechtigungen
-  - Einfache Queries per SQL
-  instruments:
-  - "[https://www.codecademy.com/learn/learn-sql](https://www.codecademy.com/learn/learn-sql)"
-  id: 3.3.1
-- goals:
-  - 'Textbearbeitung: Texte, Briefe erfassen und stylen, Grafiken'
-  - 'Tabellenkalkulation: Spalten, Zeilen, Operationen, Listen'
-  - 'Präsentationen: Texte, Grafiken, Styles, Inhaltsverzeichnis'
-  instruments:
-  - Praktikum im Backoffice
-  id: 3.1.1
-- goals:
-  - 'Kalender: Termineinladungen bestätigen/absagen, Termine erstellen/finden'
-  - 'Kalender: Abwesenheiten erfassen'
-  - 'Notizen: Bei allen Gesprächen/Meetings Notizen machen'
-  - eine Methode/Werkzeug kennen und anwenden für die Verwaltung der eigenen Aufgaben
-  instruments:
-  - Learning by Doing
-  id: 4.2.1
-- goals:
   - 'Projektmanagement: Meetings kennen und dessen Zweck verstehen'
   - 'Projektmanagement: Rollen und Aufgabenverteilung'
   instruments:
@@ -284,62 +333,13 @@ competency_levels:
   - 'Learning by Doing: Ämtli, Organisation von Events'
   id: 4.1.1
 - goals:
-  - Mit jQuery HTML-Tags in den DOM hinzufügen und bestehende HTML-Tags manipulieren.
-  - Daten mit einem Ajax-Request nachladen.
+  - 'Kalender: Termineinladungen bestätigen/absagen, Termine erstellen/finden'
+  - 'Kalender: Abwesenheiten erfassen'
+  - 'Notizen: Bei allen Gesprächen/Meetings Notizen machen'
+  - eine Methode/Werkzeug kennen und anwenden für die Verwaltung der eigenen Aufgaben
   instruments:
-  - "[https://jquery.com/](https://jquery.com/)"
-  id: 1.2.2
-- goals:
-  - JavaScript direkt in der HTML-Seite.
-  - JavaScript in eine separate Datei auslagern.
-  - Mit JavaScript einfache click-Handler umsetzen.
-  - Ein Formular validieren und absenden.
-  - 'Entwickler-Tools: Debuggen im Browser.'
-  instruments:
-  - Hilfsmittel sind noch zu definieren.
-  id: 1.2.1
-- goals:
-  - Responsive First Ansatz
-  instruments:
-  - "[https://getbootstrap.com/](https://getbootstrap.com/)"
-  id: 1.3.2
-- goals:
-  - Was bedeutet User Experience (UX)?
-  - Design und Layout einer Webseite.
-  - Formulare
-  instruments:
-  - Hilfsmittel sind noch zu definieren.
-  id: 1.3.1
-- goals:
-  - Responsive Webseite verstehen und umsetzen können.
-  instruments:
-  - "[ÜK 101 - Webauftritt: ](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=101)"
-  - "[https://www.w3schools.com/html/html_responsive.asp](https://www.w3schools.com/html/html_responsive.asp)"
-  id: 1.1.2
-- goals:
-  - Verwendung von HTML-Framework wie Bootstrap anwenden können.
-  instruments:
-  - "[https://getbootstrap.com/](https://getbootstrap.com/)"
-  id: 1.1.3
-- goals:
-  - CSS-Preprocessor wie Less, Sass, Scss anwenden können.
-  instruments:
-  - "[http://lesscss.org/](http://lesscss.org/)"
-  - "[https://sass-lang.com/guide](https://sass-lang.com/guide)"
-  - "[https://sass-lang.com/documentation/syntax](https://sass-lang.com/documentation/syntax)"
-  id: 1.1.4
-- goals:
-  - 'HTML: Aufbau einer Webseite verstehen: Tags + Attribute.'
-  - 'HTML: Die wichtigsten HTML-Tags kennen.'
-  - 'CSS: Funktionsweise von Selektoren und Formatierung verstehen.'
-  - 'CSS: Die einfachen Styles anwenden können.'
-  - Trennung zwischen HTML und CSS verstehen.
-  - Einfache Layouts mit HTML + CSS umsetzen können.
-  instruments:
-  - "[https://www.w3schools.com/html](https://www.w3schools.com/html)"
-  - "[https://www.w3schools.com/css](https://www.w3schools.com/css)"
-  - "[https://www.codecademy.com/catalog/language/html-css](https://www.codecademy.com/catalog/language/html-css)"
-  id: 1.1.1
+  - Learning by Doing
+  id: 4.2.1
 conf:
 - semester:
   - start_at_week_nr: 33
