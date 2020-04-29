@@ -1,9 +1,9 @@
 ---
 goals:
-  - Kann SPA bauen und deployen
-  - Versteht die Verwendung von Webservern
-  - Kann Frontend mit Backend Verknüpfen
+  - Kann Single Page Applications erstellen
+  - Kann CRUD Operationen visualisieren
+  - Versteht SPAs im Zusammenspiel mit Backend und Datenbanken
 instruments:
-  - '(Openshift)[https://learn.openshift.com]'
+  - '(Funktionsweise SPA)[https://www.bloomreach.com/en/blog/2018/07/what-is-a-single-page-application.html]'
   - '(Angular)[https://angular.io/tutorial]'
   - '(React)[https://reactjs.org/tutorial/tutorial.html]'
