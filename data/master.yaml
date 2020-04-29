@@ -4,14 +4,15 @@ topics:
 - title: UI / Web
   description: Verstehen und Entwickeln von Webseiten
   year_calendar_weeks:
-    1.1.1: 1 33-40
-    1.1.2: 1 50-5
-    1.1.3: 3 40-50
-    1.1.4: 4 40-50
-    1.2.1: 1 40-50
-    1.2.2: 2 40-50
-    1.3.1: 1 50-5
-    1.3.2: 2 33-39
+    1.1.1: 1 33-35
+    1.1.2: 1 37-39
+    1.1.3: 1 41-43
+    1.1.4: 1 45-47
+    1.2.1: 1 33-35
+    1.2.2: 1 37-39
+    1.2.3: 1 41-43
+    1.3.1: 1 33-35
+    1.3.2: 1 37-39
   id: '1'
 - title: Tools / Dienste
   description: Verwendung von Tools und Dienste.
@@ -51,7 +52,7 @@ topics:
   id: '4'
 competencies:
 - title: Statische Webseite
-  description: Aufbau und Gestaltung einer statischen Webseite
+  description: Aufbau und Gestaltung einer statischen Webseite mit HTML und CSS
   id: '1.1'
 - title: User Experience (UX)
   description: Design, Interaktion und Gebrauchstauglichkeit einer Webseite verbessern.
@@ -96,14 +97,26 @@ competencies:
 competency_levels:
 - goals:
   - Responsive Webseite verstehen und umsetzen können.
+  - Mobile First Ansatz
+  - Kennt die gängigsten Medienformate für das Web und wie man diese Einbindet.
+  - Kennt die wichtigsten rechtlichen Rahmenbedingungen (Copyrights, illegale Downloads,
+    Lizenzierungsbedingungen) bei der Verwendung fremder Inhalte.
   instruments:
   - "[ÜK 101 - Webauftritt: ](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=101)"
   - "[https://www.w3schools.com/html/html_responsive.asp](https://www.w3schools.com/html/html_responsive.asp)"
   id: 1.1.2
 - goals:
-  - Verwendung von HTML-Framework wie Bootstrap anwenden können.
+  - Verwendung von HTML und CSS Frameworks
+  - 'Grid System verstehen: Bootstrap, Flexbox, SS Grid Layout'
   instruments:
-  - "[https://getbootstrap.com/](https://getbootstrap.com/)"
+  - "[Bootstrap](https://getbootstrap.com/)"
+  - "[Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)"
+  - "[CSS Grid Layout](https://css-tricks.com/snippets/css/complete-guide-grid/)"
+  - "[Bootstrap Alternatives: The top 36 options in 2020](https://classpert.com/blog/top-bootstrap-alternatives)"
+  - "[Foundation](https://get.foundation/)"
+  - "[Bulma](https://bulma.io/)"
+  - "[Tailwind CSS](https://tailwindcss.com/)"
+  - "[HTML5 ★ Boilerplate](https://html5boilerplate.com/)"
   id: 1.1.3
 - goals:
   - CSS-Preprocessor wie Less, Sass, Scss anwenden können.
@@ -114,11 +127,12 @@ competency_levels:
   id: 1.1.4
 - goals:
   - 'HTML: Aufbau einer Webseite verstehen: Tags + Attribute.'
-  - 'HTML: Die wichtigsten HTML-Tags kennen.'
+  - 'HTML: Die wichtigsten HTML-Tags und Attribute kennen.'
+  - Trennung von Inhalt und Style
   - 'CSS: Funktionsweise von Selektoren und Formatierung verstehen.'
-  - 'CSS: Die einfachen Styles anwenden können.'
-  - Trennung zwischen HTML und CSS verstehen.
-  - Einfache Layouts mit HTML + CSS umsetzen können.
+  - 'CSS: Die wichtigsten Styles anwenden können.'
+  - Trennung zwischen Inhalt und Style verstehen.
+  - Einfaches Layout mit HTML + CSS umsetzen können.
   instruments:
   - "[https://www.w3schools.com/html](https://www.w3schools.com/html)"
   - "[https://www.w3schools.com/css](https://www.w3schools.com/css)"
@@ -138,10 +152,14 @@ competency_levels:
   id: 1.3.1
 - goals:
   - Mit jQuery HTML-Tags in den DOM hinzufügen und bestehende HTML-Tags manipulieren.
-  - Daten mit einem Ajax-Request nachladen.
   instruments:
   - "[https://jquery.com/](https://jquery.com/)"
   id: 1.2.2
+- goals:
+  - Daten asynchron nachladen.
+  instruments:
+  - Todo
+  id: 1.2.3
 - goals:
   - JavaScript direkt in der HTML-Seite.
   - JavaScript in eine separate Datei auslagern.

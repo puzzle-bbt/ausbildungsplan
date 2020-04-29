@@ -11,7 +11,7 @@ You will need the following things properly installed on your computer.
 -   Bundler version >= 2.0.2
 
 #### Setup
-
+1. Install ruby with the [Ruby Version Manager (RVM)](http://rvm.io/). 
 1. `$ bundle install`
 
 #### How to use

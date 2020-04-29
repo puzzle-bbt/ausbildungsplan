@@ -1,6 +1,5 @@
 ---
 goals:
   - Mit jQuery HTML-Tags in den DOM hinzufügen und bestehende HTML-Tags manipulieren.
-  - Daten mit einem Ajax-Request nachladen.
 instruments:
   - '[https://jquery.com/](https://jquery.com/)'
