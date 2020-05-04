@@ -16,7 +16,7 @@ describe Renderer do
   after(:all) do
     FileUtils.rm_rf('spec/docs')
   end
-  
+
   it 'should render semesters' do
     renderer.render_semesters
 
@@ -49,7 +49,7 @@ describe Renderer do
 
     index = File.read('spec/docs/index.html')
 
-    expect(index).to include('Applikationsentwickler EFZ - Web Engineering')
+    expect(index).to include('Systemtechniker EFZ - Sys Engineering')
     expect(index).to include('Semester')
     expect(index).to include('Jahre')
   end

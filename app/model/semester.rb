@@ -8,7 +8,7 @@ class Semester < Base
 
   YEAR_START = 1
   YEAR_END = 52
-  SEMESTER_NOS = [1, 2, 3, 4, 5, 6, 7, 8].freeze
+  SEMESTER_NOS = [1, 2, 3, 4].freeze
 
   def initialize(id, config_semester)
     @id = id

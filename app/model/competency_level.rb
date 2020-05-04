@@ -32,7 +32,7 @@ class CompetencyLevel < Base
   def valid?
     [calendar_week_to.between?(1, 52),
      calendar_week_from.between?(1, 52),
-     education_year.between?(1, 4)].all?
+     education_year.between?(1, 2)].all?
   rescue StandardError
     false
   end
