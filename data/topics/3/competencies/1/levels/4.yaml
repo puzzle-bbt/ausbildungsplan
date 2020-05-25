@@ -1,0 +1,9 @@
+---
+goals:
+  - Sinn und Verwendung von Datenbanken kennenlernen
+  - Kennt mehrere Datenbanktypen und Datenbank-Implementationen
+  - Kann lokal eine Datenbank starten und diese verwenden
+  - Kann mit Hilfe von Queries Daten aus einer SQL-Datenbank abfragen
+instruments:
+  - '[Datenbank Basics](https://www.tutorialspoint.com/Introduction-to-Databases)'
+  - '[SQL Tutorialpoint](https://www.w3schools.com/sql/default.asp)'

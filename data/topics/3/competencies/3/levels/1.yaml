@@ -1,8 +1,9 @@
 ---
 goals:
-  - 'Datenbank als Dienst oder Container lokal installieren'
-  - 'Benutzer verwalten'
-  - 'Tabellen erstellen, Berechtigungen'
-  - 'Einfache Queries per SQL'
+  - Verstehen der Grundprinzipien von DevOps
+  - Sinn und Zweck von Buildpipelines und Buildserver verstehen
+  - Verstehen was Orchestrierungsplattformen machen
 instruments:
-  - '[https://www.codecademy.com/learn/learn-sql](https://www.codecademy.com/learn/learn-sql)'
+  - '[What is DevOps](https://resources.collab.net/devops-101/what-is-devops)'
+  - '[What is a build server](https://deviq.com/build-server/)'
+  - '[What is Container Orchestration](https://blog.newrelic.com/engineering/container-orchestration-explained/)'

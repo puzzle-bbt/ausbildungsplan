@@ -1,0 +1,11 @@
+---
+goals:
+  - Entwicklungsumgebung einrichten
+  - Kennenlernen gängigster Entwicklungsumgebungen
+  - Erste Files mit VIM manipuliert
+  - Projekt in Entwicklungsumgebung importiert
+instruments:
+  - '[Vim Dokumentation](https://vim.org/)'
+  - '[Vim Tutorial](https://www.openvim.com/)'
+  - '[IntellJ](https://www.jetbrains.com/idea/)'
+  - '[Visual Studio Code](https://code.visualstudio.com/)'

@@ -1,0 +1,7 @@
+---
+goals:
+  - Sinn und Zweck von Buildpipelines und Buildserver verstehen
+  - Kann Pipelines für Build und Tests von eigenen Projekten implementieren
+  - Kann Deployments mit Pipelines anstossen / kontrollieren
+instruments:
+  - '[Jenkins Tutorial](https://www.jenkins.io/doc/tutorials/)'

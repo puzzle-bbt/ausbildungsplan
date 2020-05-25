@@ -1,7 +1,8 @@
 ---
 goals:
-  - 'Textbearbeitung: Texte, Briefe erfassen und stylen, Grafiken'
-  - 'Tabellenkalkulation: Spalten, Zeilen, Operationen, Listen'
-  - 'Präsentationen: Texte, Grafiken, Styles, Inhaltsverzeichnis'
+  - Git kennenlernen
+  - Sinn und Zweck von Git als Versionisierungstool verstehen
+  - Erstes Git Repo erstellt und versionisiert haben
 instruments:
-  - Praktikum im Backoffice
+  - '[Git Dokumentation](https://git-scm.com/)'
+  - '[Pro Git Buch](https://git-scm.com/book/en/v2)'

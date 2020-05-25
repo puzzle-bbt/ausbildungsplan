@@ -1,0 +1,7 @@
+---
+goals:
+  - Versteht die Grundkonzepte von Container Orchestration
+  - Kann eine simple Applikation auf Kubernetes / OpenShift deployen
+instruments:
+  - '[Kubernetes Tutorial](https://kubernetes.io/docs/tutorials/)'
+  - '[Learn OpenShift](https://learn.openshift.com/)'

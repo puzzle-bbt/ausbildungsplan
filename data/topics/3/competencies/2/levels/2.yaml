@@ -1,0 +1,10 @@
+---
+goals:
+  - Kennenlernen von Bash als Skriptsprache
+  - Kleine Scripts für den täglichen Betrieb schreiben
+  - Kennenlerenen von SSH
+  - Kann per SSH auf andere Systeme Verbindungen herstellen
+instruments:
+  - '[Bash Dokumentation](https://www.gnu.org/software/bash/manual/bash.html)'
+  - '[Tutorial Bash Skripts](https://wiki.ubuntuusers.de/Shell/Bash-Skripting-Guide_f%C3%BCr_Anf%C3%A4nger/)'
+  - '[SSH Digital Ocean](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)'

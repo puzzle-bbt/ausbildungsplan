@@ -1,0 +1,15 @@
+---
+goals:
+  - Kennt die Puzzle Toollandschaft für Projekten zu arbeiten
+  - Kennt Prinzipien von Kanban / Scrum
+  - Kann seine tägliche Arbeit mit Hilfe von Tools vereinfachen
+  - Kennt den Umgang mit OpenProject
+  - Kann Texte mit Markdown gestalten und gliedern
+instruments:
+  - '[LibreOffice Guide](https://documentation.libreoffice.org/en/english-documentation/getting-started-guide/)'
+  - '[Kanban](https://www.atlassian.com/agile/kanban)'
+  - '[Scrum](https://www.scrum.org/resources/what-is-scrum)'
+  - '[Wekan](https://wekan.puzzle.ch)'
+  - '[Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)'
+  - '[CodiMD](https://codimd.puzzle.ch)'
+  - '[OpenProject](https://project.puzzle.ch/)'

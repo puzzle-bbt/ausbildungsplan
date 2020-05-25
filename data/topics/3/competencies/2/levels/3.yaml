@@ -1,0 +1,9 @@
+---
+goals:
+  - Verstehen und Kennenlerenen von Containern
+  - Kennt Unterschiede zwischen virtuellen Maschinen und Containern
+  - Kann eine simple Applikation containerisieren
+instruments:
+  - '[Container Basics](https://www.docker.com/resources/what-container)'
+  - '[Docker Curriculum](https://docker-curriculum.com/'
+  - '[Dockerfile Best Practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)'
