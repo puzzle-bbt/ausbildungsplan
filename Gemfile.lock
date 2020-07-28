@@ -9,7 +9,7 @@ GEM
       temple (>= 0.8.0)
       tilt
     jaro_winkler (1.5.4)
-    json (2.2.0)
+    json (2.3.1)
     method_source (0.9.2)
     parallel (1.19.1)
     parser (2.7.0.2)
