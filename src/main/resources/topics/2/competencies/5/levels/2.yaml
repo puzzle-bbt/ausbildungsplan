@@ -1,0 +1,10 @@
+---
+goals:
+  - Versteht die Kernkonzepte von DevOps
+  - Versteht die Funktionsweise von Build Pipelines
+  - Kann eigenes Projekt in Multibranch Pipeline bauen
+instruments:
+  - '(Jenkins)[https://jenkins.io/doc/tutorials/]'
+  - '(Jenkins Katacode)[https://www.katacoda.com/courses/cicd/jenkins]'
+  - '(DevOps)[https://www.guru99.com/devops-tutorial.html]'
+  

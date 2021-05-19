@@ -1,0 +1,12 @@
+---
+goals:
+  - 'Was ist JavaScript: Entstehung, Versionen, Funktionsweise, Sandbox-Prinzip'
+  - JavaScript direkt in der HTML-Seite.
+  - JavaScript in eine separate Datei auslagern.
+  - Mit JavaScript einfache click-Handler umsetzen.
+  - Ein Formular validieren und absenden.
+  - 'Entwickler-Tools: Debuggen im Browser.'
+instruments:
+  - 'https://www.ecma-international.org/ecma-262'
+  - 'https://developer.mozilla.org/de/docs/Web/JavaScript'
+  - 'https://wiki.selfhtml.org/wiki/JavaScript'
