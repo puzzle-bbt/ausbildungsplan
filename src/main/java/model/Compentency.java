@@ -1,11 +1,11 @@
 package model;
 
 public class Compentency extends Base{
-    private int id;
+    private String id;
     private String title;
     private String description;
 
-    public Compentency(int id, String title, String description) {
+    public Compentency(String id, String title, String description) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -16,8 +16,6 @@ public class Compentency extends Base{
     public String plural() {
         return "competencies";
     }
-
-
 
 }
 
