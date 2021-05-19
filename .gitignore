@@ -20,4 +20,4 @@ test/tmp
 test/version_tmp
 tmp
 /.idea/
-*/target/**
+/src/main/resources/target/
