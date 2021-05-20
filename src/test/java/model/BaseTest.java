@@ -35,4 +35,12 @@ class BaseTest {
         Map<String, String> typeBlba = objects.stream().filter(o -> id.equals(o.get("id"))).findAny().orElse(null);
         comp.find("1.1");
     }
+
+    @org.junit.jupiter.api.Test
+    void findAllCompentenciesByTopic() throws Exception {
+        Topic topic = new Topic("1", "test", "test", new ArrayList<YearCalendarWeek>());
+        topic.getCompetencies();
+
+        assertEquals(3, topic.compentencies.size());
+    }
 }

@@ -13,8 +13,8 @@ public abstract class Base {
         throw new Exception("No plural set on this model");
     }
 
-    public ArrayList<Map<String, String>> all() throws Exception {
-        return (ArrayList<Map<String, String>>) getData().get(plural());
+    public Map<String, String> all() throws Exception {
+        return (Map<String, String>) getData().get(plural());
     }
 
     public Map<String, String> find(String id) throws Exception {
