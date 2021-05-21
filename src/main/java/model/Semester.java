@@ -1,6 +1,6 @@
 package model;
 
-public class Semester extends Base{
+public class Semester{
     private int id;
     private YearCalendarWeek[] yearCalendarWeeks;
 

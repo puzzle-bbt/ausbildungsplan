@@ -1,13 +1,21 @@
 package controller;
 
+import model.Plan;
+
 public class Builder{
 
-    private SourceDataReader reader  = new SourceDataReader();
 
-    public void initialize () {
+    public static void main(String[] args){
+        SourceDataReader reader  = new SourceDataReader();
         reader.createMasterYaml();
-
+        Plan plan = new Plan();
+        plan.getTopics();
     }
+
+
+
+
+
 }
 
 

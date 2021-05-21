@@ -6,9 +6,12 @@ import org.yaml.snakeyaml.Yaml;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 //TODO: implement real tests
 
@@ -16,31 +19,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class BaseTest {
 
     @org.junit.jupiter.api.Test
-    void getData() {
-        Yaml yaml = new Yaml();
-        InputStream inputStream = this.getClass()
-                .getClassLoader()
-                .getResourceAsStream("test.yaml");
-        Map<String, Object> masterYAML= yaml.load(inputStream);
-        assertEquals("a drop of golden sun", masterYAML.get("ray"));
-        Map<String, Object> testObj = (Map<String, Object>) masterYAML.get("doe");
-        assertEquals("four", testObj.get("calling-birds"));
+    void getPlan() {
+        Plan plan = new Plan();
+        assertNotEquals(plan, null);
     }
 
-    @org.junit.jupiter.api.Test
-    void debugFind() throws Exception {
-        String id = "1.1";
-        Compentency comp = new Compentency("1", "test", "test_description");
-        ArrayList<Map<String, String>> objects = (ArrayList<Map<String, String>>) comp.getData().get(comp.plural());
-        Map<String, String> typeBlba = objects.stream().filter(o -> id.equals(o.get("id"))).findAny().orElse(null);
-        comp.find("1.1");
-    }
-
-    @org.junit.jupiter.api.Test
-    void findAllCompentenciesByTopic() throws Exception {
-        Topic topic = new Topic("1", "test", "test", new ArrayList<YearCalendarWeek>());
-        topic.getCompetencies();
-
-        assertEquals(3, topic.compentencies.size());
-    }
 }
