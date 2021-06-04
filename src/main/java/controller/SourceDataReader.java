@@ -1,88 +1,65 @@
 package controller;
 
-public class SourceDataReader{
-        public void initialize() {
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import model.CompentencyLevelYaml;
+import model.CompentencyYaml;
+import model.Plan;
+import model.TopicYaml;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class SourceDataReader {
+    ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+
+    ArrayList<TopicYaml> yamlTopics = new ArrayList<>();
+    ArrayList<CompentencyYaml> yamlCompetencies = new ArrayList<>();
+    ArrayList<CompentencyLevelYaml> yamlCompetencyLevels = new ArrayList<>();
+
+    public HashMap<String, ArrayList> readAndPrepareAllSourceDataYamls() throws IOException {
+
+        HashMap<String, ArrayList> mapYamlObjects = new HashMap<>();
+
+        mapper.findAndRegisterModules();
+        mapper.disable(SerializationFeature.FAIL_ON_EMPTY_BEANS);
+
+        readAllSourceData(new File("src/main/resources/data1"));
+
+        mapYamlObjects.put("topics", yamlTopics);
+        mapYamlObjects.put("competencies", yamlCompetencies);
+        mapYamlObjects.put("levels", yamlCompetencyLevels);
+
+        return mapYamlObjects;
+    }
+
+
+    public void readAllSourceData(final File folder) throws IOException {
+        for (final File fileEntry : folder.listFiles()) {
+            if (fileEntry.isDirectory()) {
+                readAllSourceData(fileEntry);
+            } else {
+                if(fileEntry.getName().startsWith("topic")){
+                    yamlTopics.add(mapper.readValue(fileEntry, TopicYaml.class));
+                }else if(fileEntry.getName().startsWith("competency")){
+                    yamlCompetencies.add(mapper.readValue(fileEntry, CompentencyYaml.class));
+                }else if(fileEntry.getName().startsWith("level")){
+                    yamlCompetencyLevels.add(mapper.readValue(fileEntry, CompentencyLevelYaml.class));
+                }else{
+                    //TODO
+                    System.out.println("Abhandeln: "+fileEntry.getName());
+                }
+            }
         }
 
-        public void createMasterYaml() {
 
-        }
+    }
 
-        private void readTopics(){
 
-        }
-
-        private void readCompetencies(){
-
-        }
-
-        private void readCompetencyLevels(){
-
-        }
-
-        private void readConfig(){
-
-        }
-
-        private void extractId(){
-
-        }
+    public void createMasterYaml(Plan plan) throws IOException {
+        mapper.writeValue(new File("src/main/resources/testMaster.yaml"), plan);
+    }
 }
-
-//  attr_writer :base_path
-//
-//        ID_REGEX=/[0-9]{1,3}$/.freeze
-//
-
-
-
-//                def initialize(base_path='')
-//        @base_path =base_path
-//                end
-//
-//        def create_master_yaml
-//        comment='# This is an automaticly generated file. Don\'t edit this file manually'
-//                master={'topics'=>topics,'competencies'=>competencies, \
-//                'competency_levels'=>competency_levels,'conf'=>config}
-//                File.open("#{@base_path}data/master.yaml",'w')do|file|
-//        file.puts comment
-//        file.write(master.to_yaml)
-//        end
-//        end
-//
-//        private
-//
-//        def topics
-//        Dir.glob("#{@base_path}data/topics/**/topic.yaml").map do|topic_path|
-//        yaml=File.open(topic_path){|file|YAML.safe_load(file)}
-//        yaml.merge!('id'=>extract_id(topic_path))
-//        end
-//        end
-//
-//        def competencies
-//        path="#{@base_path}data/topics/**/competencies/**/competency.yaml"
-//        Dir.glob(path).map do|competency_path|
-//        competency=File.open(competency_path){|file|YAML.safe_load(file)}
-//        competency.merge('id'=>extract_id(competency_path))
-//        end
-//        end
-//
-//        def competency_levels
-//        path="#{@base_path}data/topics/**/competencies/**/levels/*"
-//        Dir.glob(path).map do|level_path|
-//        level=File.open(level_path){|file|YAML.safe_load(file)}
-//        level.merge('id'=>extract_id(level_path))
-//        end
-//        end
-//
-//        def config
-//        Dir.glob("#{@base_path}data/conf/*").map do|conf_path|
-//        File.open(conf_path){|file|YAML.safe_load(file)}
-//        end
-//        end
-//
-//        def extract_id(object_path)
-//        object_path.scan(/[0-9]{1,3}/).join('.')
-//        end
-//        end

@@ -2,35 +2,24 @@ package controller;
 
 import model.Plan;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class Builder{
 
 
-    public static void main(String[] args){
-        SourceDataReader reader  = new SourceDataReader();
-        reader.createMasterYaml();
-        Plan plan = new Plan();
-        plan.getTopics();
+    public static void main(String[] args) throws IOException {
+        SourceDataReader reader = new SourceDataReader();
+        HashMap<String, ArrayList> mapYamlObjects = reader.readAndPrepareAllSourceDataYamls();
+
+        TopicCreator topicCreator = new TopicCreator();
+        Plan plan = new Plan(topicCreator.createTopics(mapYamlObjects));
+        //TODO: render plan
+        Plan plan1 = plan;
+
+
+
     }
 
-
-
-
-
 }
-
-
-//  def initialize
-//          reader.create_master_yaml
-//        topics=Topic.all
-//        renderer=Renderer.new(topics)
-//        renderer.render_semesters
-//        renderer.render_overview
-//        renderer.render_index
-//        end
-//
-//private
-//
-//  def reader
-//@reader ||=SourceDataReader.new
-//        end
-//        end
