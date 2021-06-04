@@ -3,6 +3,7 @@ package view;
 import model.Topic;
 
 public class Renderer {
+    //TODO RENDERER
 
     public static final int[] YEARS = {1, 2, 3, 4};
     public static final String TEMPLATE_OVERVIEW = "app/view/templates/haml/overview.html.haml";
