@@ -1,12 +1,10 @@
 package controller;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import model.CompentencyLevelYaml;
-import model.CompentencyYaml;
-import model.Plan;
-import model.TopicYaml;
+import model.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,8 +17,9 @@ public class SourceDataReader {
     ArrayList<TopicYaml> yamlTopics = new ArrayList<>();
     ArrayList<CompentencyYaml> yamlCompetencies = new ArrayList<>();
     ArrayList<CompentencyLevelYaml> yamlCompetencyLevels = new ArrayList<>();
+    Semester semester;
 
-    public HashMap<String, ArrayList> readAndPrepareAllSourceDataYamls() throws IOException {
+    public HashMap<String, ArrayList> readAndPrepareAllSourceDataYamls() throws Exception {
 
         HashMap<String, ArrayList> mapYamlObjects = new HashMap<>();
 
@@ -37,20 +36,22 @@ public class SourceDataReader {
     }
 
 
-    public void readAllSourceData(final File folder) throws IOException {
+    public void readAllSourceData(final File folder) throws Exception {
         for (final File fileEntry : folder.listFiles()) {
             if (fileEntry.isDirectory()) {
                 readAllSourceData(fileEntry);
             } else {
-                if(fileEntry.getName().startsWith("topic")){
+                if (fileEntry.getName().startsWith("topic")) {
                     yamlTopics.add(mapper.readValue(fileEntry, TopicYaml.class));
-                }else if(fileEntry.getName().startsWith("competency")){
+                } else if (fileEntry.getName().startsWith("competency")) {
                     yamlCompetencies.add(mapper.readValue(fileEntry, CompentencyYaml.class));
-                }else if(fileEntry.getName().startsWith("level")){
+                } else if (fileEntry.getName().startsWith("level")) {
                     yamlCompetencyLevels.add(mapper.readValue(fileEntry, CompentencyLevelYaml.class));
-                }else{
+                } else if (fileEntry.getName().startsWith("semester")) {
                     //TODO
-                    System.out.println("Abhandeln: "+fileEntry.getName());
+                    semester = mapper.readValue(fileEntry, Semester.class);
+                } else {
+                    throw new Exception("Unknown yaml file: " + fileEntry.getName());
                 }
             }
         }
