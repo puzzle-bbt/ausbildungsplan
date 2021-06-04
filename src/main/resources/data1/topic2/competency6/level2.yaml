@@ -1,0 +1,9 @@
+---
+id: "2.6.2"
+goals:
+  - Kennt Domain Driven Design
+  - Kennt die Clean Architecture Ansätze
+  - Kann Applikationen nach ihren Grundsätzen modellieren
+instruments:
+  - '(Blog DDD / CA)[https://khalilstemmler.com/articles/software-design-architecture/domain-driven-design-vs-clean-architecture/]'
+competency_id: "2.6"

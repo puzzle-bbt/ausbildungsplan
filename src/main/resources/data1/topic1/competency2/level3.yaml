@@ -1,0 +1,7 @@
+---
+id: "1.2.3"
+goals:
+  - Daten asynchron nachladen.
+instruments:
+  - Todo
+competency_id: "1.2"

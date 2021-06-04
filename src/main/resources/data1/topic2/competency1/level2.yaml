@@ -1,0 +1,9 @@
+---
+id: "2.1.2"
+goals:
+  - Kennenlernen der gängigsten Algorithmen
+  - Entwerfen eigener Algorithmen
+  - Lesen und Verstehen von fremdem Code
+instruments:
+  - '(Bekannte Algorithmen)[https://medium.com/@codingfreak/top-algorithms-data-structures-concepts-every-computer-science-student-should-know-e0549c67b4ac]'
+competency_id: "2.1"

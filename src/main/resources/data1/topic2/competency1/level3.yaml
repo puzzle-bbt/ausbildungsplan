@@ -1,0 +1,11 @@
+---
+id: "2.1.3"
+goals:
+  - Versteht wie man Programmabläufe parallelisiert
+  - Versteht Konzepte und Probleme von Concurrency
+  - Kann basische Algorithmen durch Parallelisierung verbessern
+  - Kennt Probleme der Concurrency und mögliche Lösungen
+instruments:
+  - '(Bekannte Algorithmen)[https://medium.com/@codingfreak/top-algorithms-data-structures-concepts-every-computer-science-student-should-know-e0549c67b4ac]'
+  - '(Oracle Concurrency)[https://docs.oracle.com/javase/tutorial/essential/concurrency/]'
+competency_id: "2.1"

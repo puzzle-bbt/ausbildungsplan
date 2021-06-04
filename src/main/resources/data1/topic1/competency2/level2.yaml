@@ -1,0 +1,7 @@
+---
+id: "1.2.2"
+goals:
+  - Mit jQuery HTML-Tags in den DOM hinzufügen und bestehende HTML-Tags manipulieren.
+instruments:
+  - '[https://jquery.com/](https://jquery.com/)'
+competency_id: "1.2"
