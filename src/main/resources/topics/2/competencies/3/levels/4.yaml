@@ -1,9 +1,0 @@
----
-goals:
-  - Kann SPA bauen und deployen
-  - Versteht die Verwendung von Webservern
-  - Kann Frontend mit Backend Verknüpfen
-instruments:
-  - '(Openshift)[https://learn.openshift.com]'
-  - '(Angular)[https://angular.io/tutorial]'
-  - '(React)[https://reactjs.org/tutorial/tutorial.html]'

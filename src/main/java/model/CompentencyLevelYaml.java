@@ -2,20 +2,20 @@ package model;
 
 import java.util.ArrayList;
 
-public class CompentencyLevel{
+public class CompentencyLevelYaml {
     private String id;
+    private String competency_id;
     private ArrayList<String> instruments;
     private ArrayList<String> goals;
-    private String level;
 
-    public CompentencyLevel() {
+    public CompentencyLevelYaml() {
     }
 
-    public CompentencyLevel(String id, ArrayList<String> instruments, ArrayList<String> goals) {
+    public CompentencyLevelYaml(String id, String competency_id, ArrayList<String> instruments, ArrayList<String> goals) {
         this.id = id;
+        this.competency_id = competency_id;
         this.instruments = instruments;
         this.goals = goals;
-        this.level = id.split("[.]")[2];
     }
 
     public String getId() {
@@ -24,6 +24,14 @@ public class CompentencyLevel{
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getCompetency_id() {
+        return competency_id;
+    }
+
+    public void setCompetency_id(String competency_id) {
+        this.competency_id = competency_id;
     }
 
     public ArrayList<String> getInstruments() {
@@ -40,13 +48,5 @@ public class CompentencyLevel{
 
     public void setGoals(ArrayList<String> goals) {
         this.goals = goals;
-    }
-
-    public String getLevel() {
-        return level;
-    }
-
-    public void setLevel(String level) {
-        this.level = level;
     }
 }

@@ -1,9 +1,0 @@
----
-goals:
-  - Kann Single-Page Applications sicher machen
-  - Versteht und kann Json-Web-Tokens (JWT) verwenden
-  - Versteht das Konzept eines Single-Sign-On Serivces
-instruments:
-  - '(jwt.io)[https://jwt.io/]'
-  - '(SSO)[https://medium.com/@just_insane/keycloak-sso-part-1-what-is-single-sign-on-7229743c289b]'
-  - '(Keycloak)[https://www.keycloak.org/documentation]'

@@ -2,6 +2,8 @@ package model;
 
 public class YearCalendarWeek {
     private int id;
+    private String level;
+    private int apprenticeshipYear;
     private int startWeek;
     private int endWeek;
 
