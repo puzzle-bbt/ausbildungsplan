@@ -10,9 +10,12 @@ public class Plan {
     ArrayList<Topic> topics;
 
     public Plan() {
-        createPlan();
+        //createPlan();
     }
 
+    public Plan(ArrayList<Topic> topics) {
+        this.topics = topics;
+    }
 
     public void createPlan() {
         Map<String, Object> masterMap = getData();
@@ -29,5 +32,9 @@ public class Plan {
 
     public ArrayList<Topic> getTopics() {
         return topics;
+    }
+
+    public void setTopics(ArrayList<Topic> topics) {
+        this.topics = topics;
     }
 }
