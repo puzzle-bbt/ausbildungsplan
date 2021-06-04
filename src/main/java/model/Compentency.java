@@ -11,6 +11,9 @@ public class Compentency {
     private String description;
     public ArrayList<CompentencyLevel> compentencyLevels;
 
+    public Compentency() {
+    }
+
     public Compentency(String id, String title, String description, ArrayList<CompentencyLevel> compentencyLevels) {
         this.id = id;
         this.title = title;
@@ -36,4 +39,35 @@ public class Compentency {
         return new Compentency(competencyMap.get("id").toString(), competencyMap.get("title").toString(), competencyMap.get("description").toString(), compentencyLevels);
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public ArrayList<CompentencyLevel> getCompentencyLevels() {
+        return compentencyLevels;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setCompentencyLevels(ArrayList<CompentencyLevel> compentencyLevels) {
+        this.compentencyLevels = compentencyLevels;
+    }
 }
