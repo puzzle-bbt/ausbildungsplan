@@ -1,0 +1,8 @@
+---
+id: "2.5.1"
+goals:
+  - Versteht denn Sinn und Zweck von BuildTools
+  - Kennt die gängigsten Dependencymanager und Buildtools
+instruments:
+  - '(Maven)[https://maven.apache.org/]'
+  - '(Gradle)[https://gradle.org/]'

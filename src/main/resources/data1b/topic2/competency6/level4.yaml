@@ -1,0 +1,8 @@
+---
+id: "2.6.4"
+goals:
+  - Kann Prozesse in bekannten Architekturen modellieren
+  - Kennt und versteht Transaktionalität
+  - Kann Fehler und Fehlerhandling modellieren und abbilden
+instruments:
+  - Hilfsmittel sind noch zu definieren.

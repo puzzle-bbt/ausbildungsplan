@@ -1,0 +1,8 @@
+---
+id: "2.3.2"
+goals:
+  - Single-Page-Webanwendung mit einem Framework und statischem Backend erstellen
+instruments:
+  - '[Angular](https://angular.io)'
+  - '[Ember](https://emberjs.com)'
+  - '[React](https://reactjs.org)'

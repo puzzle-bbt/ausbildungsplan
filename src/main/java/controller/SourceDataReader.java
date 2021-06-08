@@ -1,6 +1,5 @@
 package controller;
 
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
@@ -12,21 +11,38 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class SourceDataReader {
-    ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+    ObjectMapper mapper;
 
     ArrayList<TopicYaml> yamlTopics = new ArrayList<>();
-    ArrayList<CompentencyYaml> yamlCompetencies = new ArrayList<>();
-    ArrayList<CompentencyLevelYaml> yamlCompetencyLevels = new ArrayList<>();
+    ArrayList<CompetencyYaml> yamlCompetencies = new ArrayList<>();
+    ArrayList<CompetencyLevelYaml> yamlCompetencyLevels = new ArrayList<>();
     Semester semester;
 
-    public HashMap<String, ArrayList> readAndPrepareAllSourceDataYamls() throws Exception {
+    public SourceDataReader(ObjectMapper mapper) {
+        this.mapper = mapper;
+    }
+
+    public SourceDataReader() {
+        this.mapper = new ObjectMapper(new YAMLFactory());
+
+    }
+
+    public HashMap<String, ArrayList> readAndPrepareAllSourceDataYamls(String filePathYamlsToProcess) throws Exception {
 
         HashMap<String, ArrayList> mapYamlObjects = new HashMap<>();
 
         mapper.findAndRegisterModules();
         mapper.disable(SerializationFeature.FAIL_ON_EMPTY_BEANS);
 
-        readAllSourceData(new File("src/main/resources/data1"));
+        readAllSourceData(new File(filePathYamlsToProcess));
+
+        for (CompetencyYaml competency : yamlCompetencies) {
+            competency.parseAndSetTopicId();
+        }
+
+        for (CompetencyLevelYaml level : yamlCompetencyLevels) {
+            level.parseAndSetCompetencyId();
+        }
 
         mapYamlObjects.put("topics", yamlTopics);
         mapYamlObjects.put("competencies", yamlCompetencies);
@@ -44,11 +60,11 @@ public class SourceDataReader {
                 if (fileEntry.getName().startsWith("topic")) {
                     yamlTopics.add(mapper.readValue(fileEntry, TopicYaml.class));
                 } else if (fileEntry.getName().startsWith("competency")) {
-                    yamlCompetencies.add(mapper.readValue(fileEntry, CompentencyYaml.class));
+                    yamlCompetencies.add(mapper.readValue(fileEntry, CompetencyYaml.class));
                 } else if (fileEntry.getName().startsWith("level")) {
-                    yamlCompetencyLevels.add(mapper.readValue(fileEntry, CompentencyLevelYaml.class));
+                    yamlCompetencyLevels.add(mapper.readValue(fileEntry, CompetencyLevelYaml.class));
                 } else if (fileEntry.getName().startsWith("semester")) {
-                    //TODO
+                    //TODO semester
                     semester = mapper.readValue(fileEntry, Semester.class);
                 } else {
                     throw new Exception("Unknown yaml file: " + fileEntry.getName());

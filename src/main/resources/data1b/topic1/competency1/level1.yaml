@@ -1,0 +1,14 @@
+---
+id: "1.1.1"
+goals:
+  - 'HTML: Aufbau einer Webseite verstehen: Tags + Attribute.'
+  - 'HTML: Die wichtigsten HTML-Tags und Attribute kennen.'
+  - 'Trennung von Inhalt und Style'
+  - 'CSS: Funktionsweise von Selektoren und Formatierung verstehen.'
+  - 'CSS: Die wichtigsten Styles anwenden können.'
+  - Trennung zwischen Inhalt und Style verstehen.
+  - Einfaches Layout mit HTML + CSS umsetzen können.
+instruments:
+  - '[https://www.w3schools.com/html](https://www.w3schools.com/html)'
+  - '[https://www.w3schools.com/css](https://www.w3schools.com/css)'
+  - '[https://www.codecademy.com/catalog/language/html-css](https://www.codecademy.com/catalog/language/html-css)'

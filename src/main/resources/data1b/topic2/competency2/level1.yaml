@@ -1,0 +1,9 @@
+---
+id: "2.2.1"
+goals:
+  - Funktionsweise einer Multi-Pape Applikation verstehen.
+  - Eine einfache Multi-Pape Applikation ohne DB anwenden und erweitern können.
+instruments:
+  - SpringBoot oder Ruby on Rails zum Erstellen einer dynamische Webseite.
+  - '(Spring Boot Baeldung)[https://www.baeldung.com/spring-boot]'
+  - '(Ruby on Rails)[https://rubyonrails.org/]'
