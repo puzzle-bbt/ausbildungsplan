@@ -11,8 +11,10 @@ import java.util.ArrayList;
 @Setter
 public class Plan {
     ArrayList<Topic> topics;
+    Semester semester;
 
-    public Plan(ArrayList<Topic> topics) {
+    public Plan(ArrayList<Topic> topics, Semester semester) {
         this.topics = topics;
+        this.semester = semester;
     }
 }

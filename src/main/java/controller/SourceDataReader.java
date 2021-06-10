@@ -3,6 +3,8 @@ package controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import lombok.Getter;
+import lombok.Setter;
 import model.*;
 
 import java.io.File;
@@ -10,13 +12,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+@Getter
+@Setter
 public class SourceDataReader {
-    ObjectMapper mapper;
+    private ObjectMapper mapper;
 
-    ArrayList<TopicYaml> yamlTopics = new ArrayList<>();
-    ArrayList<CompetencyYaml> yamlCompetencies = new ArrayList<>();
-    ArrayList<CompetencyLevelYaml> yamlCompetencyLevels = new ArrayList<>();
-    Semester semester;
+    private ArrayList<TopicYaml> yamlTopics = new ArrayList<>();
+    private ArrayList<CompetencyYaml> yamlCompetencies = new ArrayList<>();
+    private ArrayList<CompetencyLevelYaml> yamlCompetencyLevels = new ArrayList<>();
+    private Semester semester;
 
     public SourceDataReader(ObjectMapper mapper) {
         this.mapper = mapper;

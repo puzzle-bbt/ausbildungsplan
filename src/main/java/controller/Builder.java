@@ -1,6 +1,7 @@
 package controller;
 
 import model.Plan;
+import model.Semester;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,7 +15,7 @@ public class Builder{
         HashMap<String, ArrayList> mapYamlObjects = reader.readAndPrepareAllSourceDataYamls(FILE_PATH_YAMLS_TO_PROCESS);
 
         TopicCreator topicCreator = new TopicCreator();
-        Plan plan = new Plan(topicCreator.createTopics(mapYamlObjects));
+        Plan plan = new Plan(topicCreator.createTopics(mapYamlObjects), reader.getSemester());
         //TODO: render plan
         reader.createMasterYaml(plan);
 
