@@ -1,14 +1,13 @@
 package controller;
 
 import model.Plan;
-import model.Semester;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Builder{
 
-    private static final String FILE_PATH_YAMLS_TO_PROCESS = "src/main/resources/data1b";
+    private static final String FILE_PATH_YAMLS_TO_PROCESS = "src/main/resources/data";
 
     public static void main(String[] args) throws Exception {
         SourceDataReader reader = new SourceDataReader();

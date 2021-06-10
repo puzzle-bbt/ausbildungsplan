@@ -68,7 +68,6 @@ public class SourceDataReader {
                 } else if (fileEntry.getName().startsWith("level")) {
                     yamlCompetencyLevels.add(mapper.readValue(fileEntry, CompetencyLevelYaml.class));
                 } else if (fileEntry.getName().startsWith("semester")) {
-                    //TODO semester
                     semester = mapper.readValue(fileEntry, Semester.class);
                 } else {
                     throw new Exception("Unknown yaml file: " + fileEntry.getName());

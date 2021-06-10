@@ -28,7 +28,7 @@ public class SourceDataReaderTest {
 
     @Mock
     ObjectMapper mapper;
-    private static final String FILE_PATH_YAMLS_TO_PROCESS = "src/test/resources/data1b";
+    private static final String FILE_PATH_YAMLS_TO_PROCESS = "src/test/resources/data";
     private static final String FILE_PATH_YAMLS_TO_PROCESS_EXCEPTION = "src/test/resources/dataException";
 
 
