@@ -21,6 +21,7 @@ public class SourceDataReader {
     private ArrayList<CompetencyYaml> yamlCompetencies = new ArrayList<>();
     private ArrayList<CompetencyLevelYaml> yamlCompetencyLevels = new ArrayList<>();
     private Semester semester;
+    private ArrayList<LevelYearCalendarWeek> yamlLevelYearCalendarWeeks;
 
     public SourceDataReader(ObjectMapper mapper) {
         this.mapper = mapper;
@@ -51,6 +52,7 @@ public class SourceDataReader {
         mapYamlObjects.put("topics", yamlTopics);
         mapYamlObjects.put("competencies", yamlCompetencies);
         mapYamlObjects.put("levels", yamlCompetencyLevels);
+        mapYamlObjects.put("yearCalendarWeeks", yamlLevelYearCalendarWeeks);
 
         return mapYamlObjects;
     }
@@ -69,13 +71,14 @@ public class SourceDataReader {
                     yamlCompetencyLevels.add(mapper.readValue(fileEntry, CompetencyLevelYaml.class));
                 } else if (fileEntry.getName().startsWith("semester")) {
                     semester = mapper.readValue(fileEntry, Semester.class);
+                } else if (fileEntry.getName().startsWith("weeks")) {
+                    yamlLevelYearCalendarWeeks.add(mapper.readValue(fileEntry, LevelYearCalendarWeek.class));
+//                    TODO id year und week-week
                 } else {
                     throw new Exception("Unknown yaml file: " + fileEntry.getName());
                 }
             }
         }
-
-
     }
 
 
