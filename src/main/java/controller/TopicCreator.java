@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class TopicCreator {
-    //TODO: rework ids
     public ArrayList<Topic> createTopics(HashMap<String, ArrayList> mapYamlObjects) {
         ArrayList<TopicYaml> yamlTopics = mapYamlObjects.get("topics");
         ArrayList<CompetencyYaml> yamlCompetencies = mapYamlObjects.get("competencies");
@@ -22,7 +21,7 @@ public class TopicCreator {
                         if (yamlCompetencyLevel.getCompetency_id().equals(competency.getId())) {
                             for (LevelYearCalendarWeek levelYearCalendarWeek : levelYearCalendarWeeks) {
                                 if (levelYearCalendarWeek.getId().equals(yamlCompetencyLevel.getId())) {
-                                    competency.addCompetencyLevel(new CompetencyLevel(yamlCompetencyLevel.getId(), yamlCompetencyLevel.getInstruments(), yamlCompetencyLevel.getGoals(), levelYearCalendarWeek.getYear(), levelYearCalendarWeek.getYear_calendar_week())); //TODO
+                                    competency.addCompetencyLevel(new CompetencyLevel(yamlCompetencyLevel.getId(), yamlCompetencyLevel.getInstruments(), yamlCompetencyLevel.getGoals(), levelYearCalendarWeek.getYear(), levelYearCalendarWeek.getYear_calendar_week()));
                                 }
                             }
                         }
