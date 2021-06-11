@@ -1,17 +1,18 @@
-## Teamorganisation
-- id: 4.1.1
-  year: 1
-  year_calendar_week:
-    - start_at_week_nr: 33
+level_year_calendar_weeks:
+  ## Teamorganisation
+  - id: "4.1.1"
+    year: 1
+    year_calendar_week:
+      start_at_week_nr: 33
       finish_at_week_nr: 40
-- id: 4.1.2
-  year: 2
-  year_calendar_week:
-    - start_at_week_nr: 33
+  - id: "4.1.2"
+    year: 2
+    year_calendar_week:
+      start_at_week_nr: 33
       finish_at_week_nr: 40
-## Selbstorganiation
-- id: 4.2.1
-  year: 1
-  year_calendar_week:
-    - start_at_week_nr: 33
+  ## Selbstorganiation
+  - id: "4.2.1"
+    year: 1
+    year_calendar_week:
+      start_at_week_nr: 33
       finish_at_week_nr: 40

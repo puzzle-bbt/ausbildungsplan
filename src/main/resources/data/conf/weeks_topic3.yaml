@@ -1,27 +1,28 @@
-## HTTP
-- id: 3.1.1
-  year: 1
-  year_calendar_week:
-    - start_at_week_nr: 33
+level_year_calendar_weeks:
+  ## HTTP
+  - id: "3.1.1"
+    year: 1
+    year_calendar_week:
+      start_at_week_nr: 33
       finish_at_week_nr: 40
-## Betriebssysteme
-- id: 3.2.1
-  year: 1
-  year_calendar_week:
-    - start_at_week_nr: 6
+  ## Betriebssysteme
+  - id: "3.2.1"
+    year: 1
+    year_calendar_week:
+      start_at_week_nr: 6
       finish_at_week_nr: 15
-## Datenbank
-- id: 3.3.1
-  year: 1
-  year_calendar_week:
-    - start_at_week_nr: 40
+  ## Datenbank
+  - id: "3.3.1"
+    year: 1
+    year_calendar_week:
+      start_at_week_nr: 40
       finish_at_week_nr: 48
-  ## Scripting
+    ## Scripting
 
-  ## Container
+    ## Container
 
-  ## Deployment
+    ## Deployment
 
-  ## Source Code Verwalten und Editieren
+    ## Source Code Verwalten und Editieren
 
-  ## Office
+    ## Office
